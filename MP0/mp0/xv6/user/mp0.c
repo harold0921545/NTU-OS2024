@@ -2,14 +2,14 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 #include "kernel/fs.h"
+#include "kernel/syscall.h"
+#include "kernel/fcntl.h"
 
 const int MAX_NAME_LEN = 10;
 const int MAX_FILE_NUM = 20;
 
 
-char*
-fmtname(char *path)
-{
+/*char* fmtname(char *path){
   static char buf[DIRSIZ+1];
   char *p;
 
@@ -26,23 +26,13 @@ fmtname(char *path)
   return buf;
 }
 
-void mp0(char *path)
+void traverse(char *path)
 {
   char buf[512], *p;
   int fd;
-  struct dirent de;
+  DIR *D = opendir(path);
+  struct dirent *dir = NULL;
   struct stat st;
-
-  if((fd = open(path, 0)) < 0){
-    fprintf(2, "ls: cannot open %s\n", path);
-    return;
-  }
-
-  if(fstat(fd, &st) < 0){
-    fprintf(2, "ls: cannot stat %s\n", path);
-    close(fd);
-    return;
-  }
 
   switch(st.type){
   case T_FILE:
@@ -71,10 +61,11 @@ void mp0(char *path)
     break;
   }
   close(fd);
-}
+}*/
 
 int main(int argc, char *argv[]){
   char *dir_name = argv[1];
+  //char buf[128];
   int pipefd[2];
   if (pipe(pipefd) == -1){
     fprintf(2, "pipe error\n");
@@ -84,19 +75,18 @@ int main(int argc, char *argv[]){
   if (fork() == 0){ // child
     close(pipefd[0]);
     int fd = open(dir_name, O_RDONLY);
-    struct dirent *dir;
     struct stat st;
     stat(dir_name, &st);
-    if (fd == -1 || st.st_mode != S_IFDIR){
+    if (fd == -1 || st.type != T_DIR){
       printf("%s [error opening dir]\n", dir_name);
       exit(0);
     }
+    //traverse(dir_name);
     close(pipefd[1]);
     exit(0);
   }
   else{ // parent
     close(pipefd[1]);
-
     close(pipefd[0]);
     exit(0);
   }
