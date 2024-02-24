@@ -5,26 +5,6 @@
 #include "kernel/syscall.h"
 #include "kernel/fcntl.h"
 
-const int MAX_NAME_LEN = 10;
-const int MAX_FILE_NUM = 20;
-
-
-char* fmtname(char *path){
-  static char buf[DIRSIZ+1];
-  char *p;
-  // Find first character after last slash.
-  for(p=path+strlen(path); p >= path && *p != '/'; p--)
-    ;
-  p++;
-
-  // Return blank-padded name.
-  if(strlen(p) >= DIRSIZ)
-    return p;
-  memmove(buf, p, strlen(p));
-  memset(buf+strlen(p), ' ', DIRSIZ-strlen(p));
-  return buf;
-}
-
 int count(char *path, char key){
   int res = 0;
   for (int i = 0; i < strlen(path); ++i)
@@ -32,52 +12,80 @@ int count(char *path, char key){
   return res;
 }
 
-void traverse(char *path, char key){
-  int fd = open(path, O_RDONLY);
+int traverse(char *path, char key){
+  int fd = open(path, 0);
   struct dirent dir;
   struct stat st;
-  stat(path, &st);
+  if (fd < 0){
+    fprintf(2, "wtf\n");
+    close(fd);
+    return 0;
+  }
+  if (fstat(fd, &st) < 0){
+    fprintf(2, "wtf\n");
+    close(fd);
+  }
+
   printf("%s %d\n", path, count(path, key));
+
+  int ret = 0;
   if (st.type == T_DIR){
-    while (1){
-      char buf[512] = {0}, *p;
-      strcpy(buf, path);
-      p = buf+strlen(buf);
-      *p++ = '/';
-      while(read(fd, &dir, sizeof(dir)) == sizeof(dir)){
-        if (dir.inum == 0 || (strlen(dir.name) == 1 && dir.name[0] == '.') || (strlen(dir.name) == 2 && dir.name[0] == '.' && dir.name[1] == '.'))
-          continue;
-        memmove(p, dir.name, DIRSIZ);
-        p[DIRSIZ] = 0;
-        traverse(buf, key);
-      }
+    ret = 100;
+    char buf[512] = {0}, *p;
+    strcpy(buf, path);
+    p = buf + strlen(buf);
+    *p++ = '/';
+    while (read(fd, &dir, sizeof(dir)) == sizeof(dir)){
+      if (dir.inum == 0 || (strlen(dir.name) == 1 && dir.name[0] == '.') || (strlen(dir.name) == 2 && dir.name[0] == '.' && dir.name[1] == '.'))
+        continue;
+      memmove(p, dir.name, DIRSIZ);
+      p[DIRSIZ] = 0;
+      ret += traverse(buf, key);
     }
   }
+  else
+    ret = 1;
   close(fd);
+  return ret;
 }
 
 int main(int argc, char *argv[]){
   char *dir_name = argv[1];
+  
   int pipefd[2];
   if (pipe(pipefd) == -1){
     fprintf(2, "pipe error\n");
     exit(0);
   }
+
   if (fork() == 0){ // child
     close(pipefd[0]);
-    int fd = open(dir_name, O_RDONLY);
+    int fd = open(dir_name, 0);
     struct stat st;
-    stat(dir_name, &st);
-    if (fd == -1 || st.type != T_DIR){
+    if (fd < 0){
       printf("%s [error opening dir]\n", dir_name);
+      close(fd);
       exit(0);
     }
-    traverse(dir_name, argv[2][0]);
+    if (fstat(fd, &st) < 0 || st.type != T_DIR){
+      printf("%s [error opening dir]\n", dir_name);
+      close(fd);
+      exit(0);
+    }
+    close(fd);
+    
+    int ret = traverse(dir_name, argv[2][0]);
+    write(pipefd[1], &ret, sizeof(ret));
     close(pipefd[1]);
     exit(0);
   }
   else{ // parent
     close(pipefd[1]);
+    int ret;
+    read(pipefd[0], &ret, sizeof(int));
+    if (ret >= 100)
+      ret -= 100;
+    printf("\n%d directories, %d files\n", ret / 100, ret % 100);
     close(pipefd[0]);
     exit(0);
   }
