@@ -9,10 +9,9 @@ const int MAX_NAME_LEN = 10;
 const int MAX_FILE_NUM = 20;
 
 
-/*char* fmtname(char *path){
+char* fmtname(char *path){
   static char buf[DIRSIZ+1];
   char *p;
-
   // Find first character after last slash.
   for(p=path+strlen(path); p >= path && *p != '/'; p--)
     ;
@@ -26,52 +25,44 @@ const int MAX_FILE_NUM = 20;
   return buf;
 }
 
-void traverse(char *path)
-{
-  char buf[512], *p;
-  int fd;
-  DIR *D = opendir(path);
-  struct dirent *dir = NULL;
+int count(char *path, char key){
+  int res = 0;
+  for (int i = 0; i < strlen(path); ++i)
+    res += (path[i] == key);
+  return res;
+}
+
+void traverse(char *path, char key){
+  int fd = open(path, O_RDONLY);
+  struct dirent dir;
   struct stat st;
-
-  switch(st.type){
-  case T_FILE:
-    printf("%s %d %d %l\n", fmtname(path), st.type, st.ino, st.size);
-    break;
-
-  case T_DIR:
-    if(strlen(path) + 1 + DIRSIZ + 1 > sizeof buf){
-      printf("ls: path too long\n");
-      break;
-    }
-    strcpy(buf, path);
-    p = buf+strlen(buf);
-    *p++ = '/';
-    while(read(fd, &de, sizeof(de)) == sizeof(de)){
-      if(de.inum == 0)
-        continue;
-      memmove(p, de.name, DIRSIZ);
-      p[DIRSIZ] = 0;
-      if(stat(buf, &st) < 0){
-        printf("ls: cannot stat %s\n", buf);
-        continue;
+  stat(path, &st);
+  printf("%s %d\n", path, count(path, key));
+  if (st.type == T_DIR){
+    while (1){
+      char buf[512] = {0}, *p;
+      strcpy(buf, path);
+      p = buf+strlen(buf);
+      *p++ = '/';
+      while(read(fd, &dir, sizeof(dir)) == sizeof(dir)){
+        if (dir.inum == 0 || (strlen(dir.name) == 1 && dir.name[0] == '.') || (strlen(dir.name) == 2 && dir.name[0] == '.' && dir.name[1] == '.'))
+          continue;
+        memmove(p, dir.name, DIRSIZ);
+        p[DIRSIZ] = 0;
+        traverse(buf, key);
       }
-      printf("%s %d %d %d\n", fmtname(buf), st.type, st.ino, st.size);
     }
-    break;
   }
   close(fd);
-}*/
+}
 
 int main(int argc, char *argv[]){
   char *dir_name = argv[1];
-  //char buf[128];
   int pipefd[2];
   if (pipe(pipefd) == -1){
     fprintf(2, "pipe error\n");
     exit(0);
   }
-
   if (fork() == 0){ // child
     close(pipefd[0]);
     int fd = open(dir_name, O_RDONLY);
@@ -81,7 +72,7 @@ int main(int argc, char *argv[]){
       printf("%s [error opening dir]\n", dir_name);
       exit(0);
     }
-    //traverse(dir_name);
+    traverse(dir_name, argv[2][0]);
     close(pipefd[1]);
     exit(0);
   }
