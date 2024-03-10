@@ -10,7 +10,7 @@ static jmp_buf env_st;
 // static jmp_buf env_tmp;
 
 struct thread *thread_create(void (*f)(void *), void *arg){
-    fprintf(2, "thread_create\n");
+    //fprintf(2, "thread_create\n");
     struct thread *t = (struct thread*) malloc(sizeof(struct thread));
     unsigned long new_stack_p;
     unsigned long new_stack;
@@ -22,11 +22,12 @@ struct thread *thread_create(void (*f)(void *), void *arg){
     t->buf_set = 0;
     t->stack = (void*) new_stack;
     t->stack_p = (void*) new_stack_p;
+    t->top = NULL;
     id++;
     return t;
 }
 void thread_add_runqueue(struct thread *t){
-    fprintf(2, "thread_add_runqueue\n");
+    //fprintf(2, "thread_add_runqueue\n");
     if(current_thread == NULL){
         current_thread = t;
         current_thread->previous = current_thread->next = current_thread;
@@ -39,20 +40,50 @@ void thread_add_runqueue(struct thread *t){
     }
 }
 void thread_yield(void){
-    fprintf(2, "thread_yield\n");
-    //fprintf(2, "current id: %d\n", current_thread->ID);
-    if (setjmp(current_thread->env) == 0){
-        //fprintf(2, "yield, setjmp==0");
-        current_thread->buf_set = 1;
-        schedule();
-        dispatch();
+    //fprintf(2, "thread_yield\n");
+    if (current_thread->top == NULL){
+        if (setjmp(current_thread->env) == 0){
+            schedule();
+            dispatch();
+        }
     }
-    //fprintf(2, "yield, setjmp==1");
+    else{
+        if (setjmp(current_thread->top->env) == 0){
+            schedule();
+            dispatch();
+        }
+    }
+}
+void task_exit(){
+    //fprintf(2, "task_exit\n");
+    struct task *tsk = current_thread->top;
+    current_thread->top = tsk->prev;
+    free(tsk->stack);
+    free(tsk);
 }
 void dispatch(void){
     // TODO
-    fprintf(2, "dispatch\n");
+    //fprintf(2, "dispatch\n");
+    while (current_thread->top != NULL){
+        if (current_thread->top->buf_set == 0){
+            current_thread->top->buf_set = 1;
+            if (setjmp(current_thread->top->env) == 0){
+                current_thread->top->env->sp = (unsigned long)current_thread->top->stack_p;
+                longjmp(current_thread->top->env, 1);
+            }
+            current_thread->top->fp(current_thread->top->arg);
+            task_exit();
+        }
+        else
+            longjmp(current_thread->top->env, 1);
+    }
+    // thread doesn't have task
     if (current_thread->buf_set == 0){
+        current_thread->buf_set = 1;
+        if (setjmp(current_thread->env) == 0){
+            current_thread->env->sp = (unsigned long)current_thread->stack_p;
+            longjmp(current_thread->env, 1);
+        }
         current_thread->fp(current_thread->arg);
         thread_exit();
     }
@@ -60,19 +91,23 @@ void dispatch(void){
         longjmp(current_thread->env, 1);
 }
 void schedule(void){
-    fprintf(2, "schedule\n");
-    fprintf(2, "current id: %d\n", current_thread->ID);
+    //fprintf(2, "schedule\n");
     current_thread = current_thread->next;
-    fprintf(2, "current id: %d\n", current_thread->ID);
 }
 void thread_exit(void){
-    fprintf(2, "thread_exit\n");
+    //fprintf(2, "thread_exit\n");
     if(current_thread->next != current_thread){
         // TODO
         (current_thread->previous)->next = current_thread->next;
         (current_thread->next)->previous = current_thread->previous;
         struct thread *tmp = current_thread;
         schedule();
+        struct task *tsk = tmp->top;
+        while (tsk != NULL){
+            struct task *tp = tsk->prev;
+            free(tsk);
+            tsk = tp;
+        }
         free(tmp->stack);
         free(tmp);
         dispatch();
@@ -80,15 +115,20 @@ void thread_exit(void){
     else{
         // TODO
         // Hint: No more thread to execute
+        struct task *tsk = current_thread->top;
+        while (tsk != NULL){
+            struct task *tp = tsk->prev;
+            free(tsk);
+            tsk = tp;
+        }
         free(current_thread->stack);
         free(current_thread);
-        current_thread = NULL;
         longjmp(env_st, 1);
     }
 }
 void thread_start_threading(void){
     // TODO
-    fprintf(2, "thread_start_threading\n");
+    //fprintf(2, "thread_start_threading\n");
     if (setjmp(env_st) == 0)
         dispatch();
     return;
@@ -97,4 +137,27 @@ void thread_start_threading(void){
 // part 2
 void thread_assign_task(struct thread *t, void (*f)(void *), void *arg){
     // TODO
+    // fprintf(2, "assign_task\n");
+    struct task *tsk = (struct task *)malloc(sizeof(struct task));
+    unsigned long new_stack_p;
+    unsigned long new_stack;
+    new_stack = (unsigned long) malloc(sizeof(unsigned long)*0x100);
+    new_stack_p = new_stack +0x100*8-0x2*8;
+    tsk->fp = f;
+    tsk->arg = arg;
+    tsk->buf_set = 0;
+    tsk->stack = (void*) new_stack;
+    tsk->stack_p = (void*) new_stack_p;
+    tsk->prev = t->top;
+    t->top = tsk;
+    if (t == current_thread){
+        if (tsk->prev != NULL){
+            if (tsk->prev->buf_set != 0)
+                setjmp(tsk->prev->env);
+        }
+        else{
+            if (t->buf_set != 0)
+                setjmp(t->env);
+        }
+    }
 }
