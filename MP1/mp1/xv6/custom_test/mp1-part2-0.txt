@@ -1,0 +1,17 @@
+mp1-part2-0
+thread 1: 100
+task 2: 101
+thread 2: 0
+thread 1: 101
+thread 2: 1
+thread 1: 102
+task 2: 103
+thread 1: 103
+thread 2: 2
+thread 1: 104
+task 2: 105
+thread 2: 3
+thread 1: 105
+thread 2: 4
+
+exited

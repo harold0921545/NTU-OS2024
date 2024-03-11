@@ -1,11 +1,33 @@
-== Test thread package with public testcase part1-0 (10%) ==
-thread package with public testcase part1-0: OK (2.8s)
-== Test thread package with public testcase part1-1 (10%) ==
-thread package with public testcase part1-1: OK (1.0s)
-== Test thread package with public testcase part2-0 (5%) ==
-thread package with public testcase part2-0: OK (0.9s)
-== Test thread package with public testcase part2-1 (5%) ==
-thread package with public testcase part2-1: OK (1.0s)
-== Test thread package with public testcase part2-2 (5%) ==
-thread package with public testcase part2-2: OK (1.0s)
-Score: 35/35
+== Test thread package with public testcase mp1-part1-0 (5%) ==
+thread package with public testcase mp1-part1-0: OK (3.3s)
+== Test thread package with public testcase mp1-part1-1 (5%) ==
+thread package with public testcase mp1-part1-1: OK (0.8s)
+== Test thread package with public testcase mp1-part2-0 (5%) ==
+thread package with public testcase mp1-part2-0: OK (0.8s)
+== Test thread package with public testcase mp1-part2-1 (5%) ==
+thread package with public testcase mp1-part2-1: OK (1.0s)
+== Test thread package with public testcase mp1-part2-2 (5%) ==
+thread package with public testcase mp1-part2-2: OK (1.0s)
+== Test thread package with public testcase custom-1 (5%) ==
+thread package with public testcase custom-1: OK (15.5s)
+== Test thread package with public testcase custom-2 (5%) ==
+thread package with public testcase custom-2: OK (1.1s)
+== Test thread package with public testcase custom-3 (5%) ==
+thread package with public testcase custom-3: OK (1.1s)
+== Test thread package with public testcase custom-4 (5%) ==
+thread package with public testcase custom-4: OK (2.1s)
+== Test thread package with public testcase custom-5 (5%) ==
+thread package with public testcase custom-5: OK (2.7s)
+== Test thread package with public testcase custom-6 (5%) ==
+thread package with public testcase custom-6: OK (3.2s)
+== Test thread package with public testcase custom-7 (5%) ==
+thread package with public testcase custom-7: OK (3.2s)
+== Test thread package with public testcase custom-8 (5%) ==
+thread package with public testcase custom-8: OK (1.0s)
+== Test thread package with public testcase custom-9 (5%) ==
+Timeout! thread package with public testcase custom-9: FAIL (30.1s)
+    [Error] Output on line 1: 'qemu-system-riscv64: terminating on signal 15 from pid 1858 (make)', should be 'fib 14285 100000 5'
+== Test thread package with public testcase custom-10 (5%) ==
+thread package with public testcase custom-10: FAIL (1.5s)
+    [Error] Output on line 4: 'fib 0 4 723', should be 'fib 0 4 724'
+Score: 65/75

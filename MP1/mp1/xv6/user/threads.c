@@ -98,8 +98,8 @@ void thread_exit(void){
     //fprintf(2, "thread_exit\n");
     if(current_thread->next != current_thread){
         // TODO
-        (current_thread->previous)->next = current_thread->next;
-        (current_thread->next)->previous = current_thread->previous;
+        current_thread->previous->next = current_thread->next;
+        current_thread->next->previous = current_thread->previous;
         struct thread *tmp = current_thread;
         schedule();
         struct task *tsk = tmp->top;
@@ -123,15 +123,17 @@ void thread_exit(void){
         }
         free(current_thread->stack);
         free(current_thread);
+        current_thread = NULL;
         longjmp(env_st, 1);
     }
 }
 void thread_start_threading(void){
     // TODO
     //fprintf(2, "thread_start_threading\n");
+    if (current_thread == NULL)
+        return;
     if (setjmp(env_st) == 0)
         dispatch();
-    return;
 }
 
 // part 2

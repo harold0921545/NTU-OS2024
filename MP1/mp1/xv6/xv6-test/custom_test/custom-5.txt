@@ -1,0 +1,1830 @@
+custom-5
+calc 0
+fib 1 0
+owo
+calc 1
+fib 2 1
+owo
+calc 2
+fib 3 2
+fib 4 1
+owo
+fib 5 0
+owo
+calc 3
+fib 6 3
+fib 7 2
+fib 8 1
+owo
+fib 9 0
+owo
+fib 10 1
+owo
+calc 4
+fib 11 4
+fib 12 3
+fib 13 2
+fib 14 1
+owo
+fib 15 0
+owo
+fib 16 1
+owo
+fib 17 2
+fib 18 1
+owo
+fib 19 0
+owo
+calc 5
+fib 20 5
+fib 21 4
+fib 22 3
+fib 23 2
+fib 24 1
+owo
+fib 25 0
+owo
+fib 26 1
+owo
+fib 27 2
+fib 28 1
+owo
+fib 29 0
+owo
+fib 30 3
+fib 31 2
+fib 32 1
+owo
+fib 33 0
+owo
+fib 34 1
+owo
+calc 6
+fib 35 6
+fib 36 5
+fib 37 4
+fib 38 3
+fib 39 2
+fib 40 1
+owo
+fib 41 0
+owo
+fib 42 1
+owo
+fib 43 2
+fib 44 1
+owo
+fib 45 0
+owo
+fib 46 3
+fib 47 2
+fib 48 1
+owo
+fib 49 0
+owo
+fib 50 1
+owo
+fib 51 4
+fib 52 3
+fib 53 2
+fib 54 1
+owo
+fib 55 0
+owo
+fib 56 1
+owo
+fib 57 2
+fib 58 1
+owo
+fib 59 0
+owo
+calc 7
+fib 60 7
+fib 61 6
+fib 62 5
+fib 63 4
+fib 64 3
+fib 65 2
+fib 66 1
+owo
+fib 67 0
+owo
+fib 68 1
+owo
+fib 69 2
+fib 70 1
+owo
+fib 71 0
+owo
+fib 72 3
+fib 73 2
+fib 74 1
+owo
+fib 75 0
+owo
+fib 76 1
+owo
+fib 77 4
+fib 78 3
+fib 79 2
+fib 80 1
+owo
+fib 81 0
+owo
+fib 82 1
+owo
+fib 83 2
+fib 84 1
+owo
+fib 85 0
+owo
+fib 86 5
+fib 87 4
+fib 88 3
+fib 89 2
+fib 90 1
+owo
+fib 91 0
+owo
+fib 92 1
+owo
+fib 93 2
+fib 94 1
+owo
+fib 95 0
+owo
+fib 96 3
+fib 97 2
+fib 98 1
+owo
+fib 99 0
+owo
+fib 100 1
+owo
+calc 8
+fib 101 8
+fib 102 7
+fib 103 6
+fib 104 5
+fib 105 4
+fib 106 3
+fib 107 2
+fib 108 1
+owo
+fib 109 0
+owo
+fib 110 1
+owo
+fib 111 2
+fib 112 1
+owo
+fib 113 0
+owo
+fib 114 3
+fib 115 2
+fib 116 1
+owo
+fib 117 0
+owo
+fib 118 1
+owo
+fib 119 4
+fib 120 3
+fib 121 2
+fib 122 1
+owo
+fib 123 0
+owo
+fib 124 1
+owo
+fib 125 2
+fib 126 1
+owo
+fib 127 0
+owo
+fib 128 5
+fib 129 4
+fib 130 3
+fib 131 2
+fib 132 1
+owo
+fib 133 0
+owo
+fib 134 1
+owo
+fib 135 2
+fib 136 1
+owo
+fib 137 0
+owo
+fib 138 3
+fib 139 2
+fib 140 1
+owo
+fib 141 0
+owo
+fib 142 1
+owo
+fib 143 6
+fib 144 5
+fib 145 4
+fib 146 3
+fib 147 2
+fib 148 1
+owo
+fib 149 0
+owo
+fib 150 1
+owo
+fib 151 2
+fib 152 1
+owo
+fib 153 0
+owo
+fib 154 3
+fib 155 2
+fib 156 1
+owo
+fib 157 0
+owo
+fib 158 1
+owo
+fib 159 4
+fib 160 3
+fib 161 2
+fib 162 1
+owo
+fib 163 0
+owo
+fib 164 1
+owo
+fib 165 2
+fib 166 1
+owo
+fib 167 0
+owo
+calc 9
+fib 168 9
+fib 169 8
+fib 170 7
+fib 171 6
+fib 172 5
+fib 173 4
+fib 174 3
+fib 175 2
+fib 176 1
+owo
+fib 177 0
+owo
+fib 178 1
+owo
+fib 179 2
+fib 180 1
+owo
+fib 181 0
+owo
+fib 182 3
+fib 183 2
+fib 184 1
+owo
+fib 185 0
+owo
+fib 186 1
+owo
+fib 187 4
+fib 188 3
+fib 189 2
+fib 190 1
+owo
+fib 191 0
+owo
+fib 192 1
+owo
+fib 193 2
+fib 194 1
+owo
+fib 195 0
+owo
+fib 196 5
+fib 197 4
+fib 198 3
+fib 199 2
+fib 200 1
+owo
+fib 201 0
+owo
+fib 202 1
+owo
+fib 203 2
+fib 204 1
+owo
+fib 205 0
+owo
+fib 206 3
+fib 207 2
+fib 208 1
+owo
+fib 209 0
+owo
+fib 210 1
+owo
+fib 211 6
+fib 212 5
+fib 213 4
+fib 214 3
+fib 215 2
+fib 216 1
+owo
+fib 217 0
+owo
+fib 218 1
+owo
+fib 219 2
+fib 220 1
+owo
+fib 221 0
+owo
+fib 222 3
+fib 223 2
+fib 224 1
+owo
+fib 225 0
+owo
+fib 226 1
+owo
+fib 227 4
+fib 228 3
+fib 229 2
+fib 230 1
+owo
+fib 231 0
+owo
+fib 232 1
+owo
+fib 233 2
+fib 234 1
+owo
+fib 235 0
+owo
+fib 236 7
+fib 237 6
+fib 238 5
+fib 239 4
+fib 240 3
+fib 241 2
+fib 242 1
+owo
+fib 243 0
+owo
+fib 244 1
+owo
+fib 245 2
+fib 246 1
+owo
+fib 247 0
+owo
+fib 248 3
+fib 249 2
+fib 250 1
+owo
+fib 251 0
+owo
+fib 252 1
+owo
+fib 253 4
+fib 254 3
+fib 255 2
+fib 256 1
+owo
+fib 257 0
+owo
+fib 258 1
+owo
+fib 259 2
+fib 260 1
+owo
+fib 261 0
+owo
+fib 262 5
+fib 263 4
+fib 264 3
+fib 265 2
+fib 266 1
+owo
+fib 267 0
+owo
+fib 268 1
+owo
+fib 269 2
+fib 270 1
+owo
+fib 271 0
+owo
+fib 272 3
+fib 273 2
+fib 274 1
+owo
+fib 275 0
+owo
+fib 276 1
+owo
+calc 10
+fib 277 10
+fib 278 9
+fib 279 8
+fib 280 7
+fib 281 6
+fib 282 5
+fib 283 4
+fib 284 3
+fib 285 2
+fib 286 1
+owo
+fib 287 0
+owo
+fib 288 1
+owo
+fib 289 2
+fib 290 1
+owo
+fib 291 0
+owo
+fib 292 3
+fib 293 2
+fib 294 1
+owo
+fib 295 0
+owo
+fib 296 1
+owo
+fib 297 4
+fib 298 3
+fib 299 2
+fib 300 1
+owo
+fib 301 0
+owo
+fib 302 1
+owo
+fib 303 2
+fib 304 1
+owo
+fib 305 0
+owo
+fib 306 5
+fib 307 4
+fib 308 3
+fib 309 2
+fib 310 1
+owo
+fib 311 0
+owo
+fib 312 1
+owo
+fib 313 2
+fib 314 1
+owo
+fib 315 0
+owo
+fib 316 3
+fib 317 2
+fib 318 1
+owo
+fib 319 0
+owo
+fib 320 1
+owo
+fib 321 6
+fib 322 5
+fib 323 4
+fib 324 3
+fib 325 2
+fib 326 1
+owo
+fib 327 0
+owo
+fib 328 1
+owo
+fib 329 2
+fib 330 1
+owo
+fib 331 0
+owo
+fib 332 3
+fib 333 2
+fib 334 1
+owo
+fib 335 0
+owo
+fib 336 1
+owo
+fib 337 4
+fib 338 3
+fib 339 2
+fib 340 1
+owo
+fib 341 0
+owo
+fib 342 1
+owo
+fib 343 2
+fib 344 1
+owo
+fib 345 0
+owo
+fib 346 7
+fib 347 6
+fib 348 5
+fib 349 4
+fib 350 3
+fib 351 2
+fib 352 1
+owo
+fib 353 0
+owo
+fib 354 1
+owo
+fib 355 2
+fib 356 1
+owo
+fib 357 0
+owo
+fib 358 3
+fib 359 2
+fib 360 1
+owo
+fib 361 0
+owo
+fib 362 1
+owo
+fib 363 4
+fib 364 3
+fib 365 2
+fib 366 1
+owo
+fib 367 0
+owo
+fib 368 1
+owo
+fib 369 2
+fib 370 1
+owo
+fib 371 0
+owo
+fib 372 5
+fib 373 4
+fib 374 3
+fib 375 2
+fib 376 1
+owo
+fib 377 0
+owo
+fib 378 1
+owo
+fib 379 2
+fib 380 1
+owo
+fib 381 0
+owo
+fib 382 3
+fib 383 2
+fib 384 1
+owo
+fib 385 0
+owo
+fib 386 1
+owo
+fib 387 8
+fib 388 7
+fib 389 6
+fib 390 5
+fib 391 4
+fib 392 3
+fib 393 2
+fib 394 1
+owo
+fib 395 0
+owo
+fib 396 1
+owo
+fib 397 2
+fib 398 1
+owo
+fib 399 0
+owo
+fib 400 3
+fib 401 2
+fib 402 1
+owo
+fib 403 0
+owo
+fib 404 1
+owo
+fib 405 4
+fib 406 3
+fib 407 2
+fib 408 1
+owo
+fib 409 0
+owo
+fib 410 1
+owo
+fib 411 2
+fib 412 1
+owo
+fib 413 0
+owo
+fib 414 5
+fib 415 4
+fib 416 3
+fib 417 2
+fib 418 1
+owo
+fib 419 0
+owo
+fib 420 1
+owo
+fib 421 2
+fib 422 1
+owo
+fib 423 0
+owo
+fib 424 3
+fib 425 2
+fib 426 1
+owo
+fib 427 0
+owo
+fib 428 1
+owo
+fib 429 6
+fib 430 5
+fib 431 4
+fib 432 3
+fib 433 2
+fib 434 1
+owo
+fib 435 0
+owo
+fib 436 1
+owo
+fib 437 2
+fib 438 1
+owo
+fib 439 0
+owo
+fib 440 3
+fib 441 2
+fib 442 1
+owo
+fib 443 0
+owo
+fib 444 1
+owo
+fib 445 4
+fib 446 3
+fib 447 2
+fib 448 1
+owo
+fib 449 0
+owo
+fib 450 1
+owo
+fib 451 2
+fib 452 1
+owo
+fib 453 0
+owo
+calc 11
+fib 454 11
+fib 455 10
+fib 456 9
+fib 457 8
+fib 458 7
+fib 459 6
+fib 460 5
+fib 461 4
+fib 462 3
+fib 463 2
+fib 464 1
+owo
+fib 465 0
+owo
+fib 466 1
+owo
+fib 467 2
+fib 468 1
+owo
+fib 469 0
+owo
+fib 470 3
+fib 471 2
+fib 472 1
+owo
+fib 473 0
+owo
+fib 474 1
+owo
+fib 475 4
+fib 476 3
+fib 477 2
+fib 478 1
+owo
+fib 479 0
+owo
+fib 480 1
+owo
+fib 481 2
+fib 482 1
+owo
+fib 483 0
+owo
+fib 484 5
+fib 485 4
+fib 486 3
+fib 487 2
+fib 488 1
+owo
+fib 489 0
+owo
+fib 490 1
+owo
+fib 491 2
+fib 492 1
+owo
+fib 493 0
+owo
+fib 494 3
+fib 495 2
+fib 496 1
+owo
+fib 497 0
+owo
+fib 498 1
+owo
+fib 499 6
+fib 500 5
+fib 501 4
+fib 502 3
+fib 503 2
+fib 504 1
+owo
+fib 505 0
+owo
+fib 506 1
+owo
+fib 507 2
+fib 508 1
+owo
+fib 509 0
+owo
+fib 510 3
+fib 511 2
+fib 512 1
+owo
+fib 513 0
+owo
+fib 514 1
+owo
+fib 515 4
+fib 516 3
+fib 517 2
+fib 518 1
+owo
+fib 519 0
+owo
+fib 520 1
+owo
+fib 521 2
+fib 522 1
+owo
+fib 523 0
+owo
+fib 524 7
+fib 525 6
+fib 526 5
+fib 527 4
+fib 528 3
+fib 529 2
+fib 530 1
+owo
+fib 531 0
+owo
+fib 532 1
+owo
+fib 533 2
+fib 534 1
+owo
+fib 535 0
+owo
+fib 536 3
+fib 537 2
+fib 538 1
+owo
+fib 539 0
+owo
+fib 540 1
+owo
+fib 541 4
+fib 542 3
+fib 543 2
+fib 544 1
+owo
+fib 545 0
+owo
+fib 546 1
+owo
+fib 547 2
+fib 548 1
+owo
+fib 549 0
+owo
+fib 550 5
+fib 551 4
+fib 552 3
+fib 553 2
+fib 554 1
+owo
+fib 555 0
+owo
+fib 556 1
+owo
+fib 557 2
+fib 558 1
+owo
+fib 559 0
+owo
+fib 560 3
+fib 561 2
+fib 562 1
+owo
+fib 563 0
+owo
+fib 564 1
+owo
+fib 565 8
+fib 566 7
+fib 567 6
+fib 568 5
+fib 569 4
+fib 570 3
+fib 571 2
+fib 572 1
+owo
+fib 573 0
+owo
+fib 574 1
+owo
+fib 575 2
+fib 576 1
+owo
+fib 577 0
+owo
+fib 578 3
+fib 579 2
+fib 580 1
+owo
+fib 581 0
+owo
+fib 582 1
+owo
+fib 583 4
+fib 584 3
+fib 585 2
+fib 586 1
+owo
+fib 587 0
+owo
+fib 588 1
+owo
+fib 589 2
+fib 590 1
+owo
+fib 591 0
+owo
+fib 592 5
+fib 593 4
+fib 594 3
+fib 595 2
+fib 596 1
+owo
+fib 597 0
+owo
+fib 598 1
+owo
+fib 599 2
+fib 600 1
+owo
+fib 601 0
+owo
+fib 602 3
+fib 603 2
+fib 604 1
+owo
+fib 605 0
+owo
+fib 606 1
+owo
+fib 607 6
+fib 608 5
+fib 609 4
+fib 610 3
+fib 611 2
+fib 612 1
+owo
+fib 613 0
+owo
+fib 614 1
+owo
+fib 615 2
+fib 616 1
+owo
+fib 617 0
+owo
+fib 618 3
+fib 619 2
+fib 620 1
+owo
+fib 621 0
+owo
+fib 622 1
+owo
+fib 623 4
+fib 624 3
+fib 625 2
+fib 626 1
+owo
+fib 627 0
+owo
+fib 628 1
+owo
+fib 629 2
+fib 630 1
+owo
+fib 631 0
+owo
+fib 632 9
+fib 633 8
+fib 634 7
+fib 635 6
+fib 636 5
+fib 637 4
+fib 638 3
+fib 639 2
+fib 640 1
+owo
+fib 641 0
+owo
+fib 642 1
+owo
+fib 643 2
+fib 644 1
+owo
+fib 645 0
+owo
+fib 646 3
+fib 647 2
+fib 648 1
+owo
+fib 649 0
+owo
+fib 650 1
+owo
+fib 651 4
+fib 652 3
+fib 653 2
+fib 654 1
+owo
+fib 655 0
+owo
+fib 656 1
+owo
+fib 657 2
+fib 658 1
+owo
+fib 659 0
+owo
+fib 660 5
+fib 661 4
+fib 662 3
+fib 663 2
+fib 664 1
+owo
+fib 665 0
+owo
+fib 666 1
+owo
+fib 667 2
+fib 668 1
+owo
+fib 669 0
+owo
+fib 670 3
+fib 671 2
+fib 672 1
+owo
+fib 673 0
+owo
+fib 674 1
+owo
+fib 675 6
+fib 676 5
+fib 677 4
+fib 678 3
+fib 679 2
+fib 680 1
+owo
+fib 681 0
+owo
+fib 682 1
+owo
+fib 683 2
+fib 684 1
+owo
+fib 685 0
+owo
+fib 686 3
+fib 687 2
+fib 688 1
+owo
+fib 689 0
+owo
+fib 690 1
+owo
+fib 691 4
+fib 692 3
+fib 693 2
+fib 694 1
+owo
+fib 695 0
+owo
+fib 696 1
+owo
+fib 697 2
+fib 698 1
+owo
+fib 699 0
+owo
+fib 700 7
+fib 701 6
+fib 702 5
+fib 703 4
+fib 704 3
+fib 705 2
+fib 706 1
+owo
+fib 707 0
+owo
+fib 708 1
+owo
+fib 709 2
+fib 710 1
+owo
+fib 711 0
+owo
+fib 712 3
+fib 713 2
+fib 714 1
+owo
+fib 715 0
+owo
+fib 716 1
+owo
+fib 717 4
+fib 718 3
+fib 719 2
+fib 720 1
+owo
+fib 721 0
+owo
+fib 722 1
+owo
+fib 723 2
+fib 724 1
+owo
+fib 725 0
+owo
+fib 726 5
+fib 727 4
+fib 728 3
+fib 729 2
+fib 730 1
+owo
+fib 731 0
+owo
+fib 732 1
+owo
+fib 733 2
+fib 734 1
+owo
+fib 735 0
+owo
+fib 736 3
+fib 737 2
+fib 738 1
+owo
+fib 739 0
+owo
+fib 740 1
+owo
+calc 12
+fib 741 12
+fib 742 11
+fib 743 10
+fib 744 9
+fib 745 8
+fib 746 7
+fib 747 6
+fib 748 5
+fib 749 4
+fib 750 3
+fib 751 2
+fib 752 1
+owo
+fib 753 0
+owo
+fib 754 1
+owo
+fib 755 2
+fib 756 1
+owo
+fib 757 0
+owo
+fib 758 3
+fib 759 2
+fib 760 1
+owo
+fib 761 0
+owo
+fib 762 1
+owo
+fib 763 4
+fib 764 3
+fib 765 2
+fib 766 1
+owo
+fib 767 0
+owo
+fib 768 1
+owo
+fib 769 2
+fib 770 1
+owo
+fib 771 0
+owo
+fib 772 5
+fib 773 4
+fib 774 3
+fib 775 2
+fib 776 1
+owo
+fib 777 0
+owo
+fib 778 1
+owo
+fib 779 2
+fib 780 1
+owo
+fib 781 0
+owo
+fib 782 3
+fib 783 2
+fib 784 1
+owo
+fib 785 0
+owo
+fib 786 1
+owo
+fib 787 6
+fib 788 5
+fib 789 4
+fib 790 3
+fib 791 2
+fib 792 1
+owo
+fib 793 0
+owo
+fib 794 1
+owo
+fib 795 2
+fib 796 1
+owo
+fib 797 0
+owo
+fib 798 3
+fib 799 2
+fib 800 1
+owo
+fib 801 0
+owo
+fib 802 1
+owo
+fib 803 4
+fib 804 3
+fib 805 2
+fib 806 1
+owo
+fib 807 0
+owo
+fib 808 1
+owo
+fib 809 2
+fib 810 1
+owo
+fib 811 0
+owo
+fib 812 7
+fib 813 6
+fib 814 5
+fib 815 4
+fib 816 3
+fib 817 2
+fib 818 1
+owo
+fib 819 0
+owo
+fib 820 1
+owo
+fib 821 2
+fib 822 1
+owo
+fib 823 0
+owo
+fib 824 3
+fib 825 2
+fib 826 1
+owo
+fib 827 0
+owo
+fib 828 1
+owo
+fib 829 4
+fib 830 3
+fib 831 2
+fib 832 1
+owo
+fib 833 0
+owo
+fib 834 1
+owo
+fib 835 2
+fib 836 1
+owo
+fib 837 0
+owo
+fib 838 5
+fib 839 4
+fib 840 3
+fib 841 2
+fib 842 1
+owo
+fib 843 0
+owo
+fib 844 1
+owo
+fib 845 2
+fib 846 1
+owo
+fib 847 0
+owo
+fib 848 3
+fib 849 2
+fib 850 1
+owo
+fib 851 0
+owo
+fib 852 1
+owo
+fib 853 8
+fib 854 7
+fib 855 6
+fib 856 5
+fib 857 4
+fib 858 3
+fib 859 2
+fib 860 1
+owo
+fib 861 0
+owo
+fib 862 1
+owo
+fib 863 2
+fib 864 1
+owo
+fib 865 0
+owo
+fib 866 3
+fib 867 2
+fib 868 1
+owo
+fib 869 0
+owo
+fib 870 1
+owo
+fib 871 4
+fib 872 3
+fib 873 2
+fib 874 1
+owo
+fib 875 0
+owo
+fib 876 1
+owo
+fib 877 2
+fib 878 1
+owo
+fib 879 0
+owo
+fib 880 5
+fib 881 4
+fib 882 3
+fib 883 2
+fib 884 1
+owo
+fib 885 0
+owo
+fib 886 1
+owo
+fib 887 2
+fib 888 1
+owo
+fib 889 0
+owo
+fib 890 3
+fib 891 2
+fib 892 1
+owo
+fib 893 0
+owo
+fib 894 1
+owo
+fib 895 6
+fib 896 5
+fib 897 4
+fib 898 3
+fib 899 2
+fib 900 1
+owo
+fib 901 0
+owo
+fib 902 1
+owo
+fib 903 2
+fib 904 1
+owo
+fib 905 0
+owo
+fib 906 3
+fib 907 2
+fib 908 1
+owo
+fib 909 0
+owo
+fib 910 1
+owo
+fib 911 4
+fib 912 3
+fib 913 2
+fib 914 1
+owo
+fib 915 0
+owo
+fib 916 1
+owo
+fib 917 2
+fib 918 1
+owo
+fib 919 0
+owo
+fib 920 9
+fib 921 8
+fib 922 7
+fib 923 6
+fib 924 5
+fib 925 4
+fib 926 3
+fib 927 2
+fib 928 1
+owo
+fib 929 0
+owo
+fib 930 1
+owo
+fib 931 2
+fib 932 1
+owo
+fib 933 0
+owo
+fib 934 3
+fib 935 2
+fib 936 1
+owo
+fib 937 0
+owo
+fib 938 1
+owo
+fib 939 4
+fib 940 3
+fib 941 2
+fib 942 1
+owo
+fib 943 0
+owo
+fib 944 1
+owo
+fib 945 2
+fib 946 1
+owo
+fib 947 0
+owo
+fib 948 5
+fib 949 4
+fib 950 3
+fib 951 2
+fib 952 1
+owo
+fib 953 0
+owo
+fib 954 1
+owo
+fib 955 2
+fib 956 1
+owo
+fib 957 0
+owo
+fib 958 3
+fib 959 2
+fib 960 1
+owo
+fib 961 0
+owo
+fib 962 1
+owo
+fib 963 6
+fib 964 5
+fib 965 4
+fib 966 3
+fib 967 2
+fib 968 1
+owo
+fib 969 0
+owo
+fib 970 1
+owo
+fib 971 2
+fib 972 1
+owo
+fib 973 0
+owo
+fib 974 3
+fib 975 2
+fib 976 1
+owo
+fib 977 0
+owo
+fib 978 1
+owo
+fib 979 4
+fib 980 3
+fib 981 2
+fib 982 1
+owo
+fib 983 0
+owo
+fib 984 1
+owo
+fib 985 2
+fib 986 1
+owo
+fib 987 0
+owo
+fib 988 7
+fib 989 6
+fib 990 5
+fib 991 4
+fib 992 3
+fib 993 2
+fib 994 1
+owo
+fib 995 0
+owo
+fib 996 1
+owo
+fib 997 2
+fib 998 1
+owo
+fib 999 0
+owo
+fib 1000 3
+fib 1001 2
+fib 1002 1
+owo
+fib 1003 0
+owo
+fib 1004 1
+owo
+fib 1005 4
+fib 1006 3
+fib 1007 2
+fib 1008 1
+owo
+fib 1009 0
+owo
+fib 1010 1
+owo
+fib 1011 2
+fib 1012 1
+owo
+fib 1013 0
+owo
+fib 1014 5
+fib 1015 4
+fib 1016 3
+fib 1017 2
+fib 1018 1
+owo
+fib 1019 0
+owo
+fib 1020 1
+owo
+fib 1021 2
+fib 1022 1
+owo
+fib 1023 0
+owo
+fib 1024 3
+fib 1025 2
+fib 1026 1
+owo
+fib 1027 0
+owo
+fib 1028 1
+owo
+fib 1029 10
+fib 1030 9
+fib 1031 8
+fib 1032 7
+fib 1033 6
+fib 1034 5
+fib 1035 4
+fib 1036 3
+fib 1037 2
+fib 1038 1
+owo
+fib 1039 0
+owo
+fib 1040 1
+owo
+fib 1041 2
+fib 1042 1
+owo
+fib 1043 0
+owo
+fib 1044 3
+fib 1045 2
+fib 1046 1
+owo
+fib 1047 0
+owo
+fib 1048 1
+owo
+fib 1049 4
+fib 1050 3
+fib 1051 2
+fib 1052 1
+owo
+fib 1053 0
+owo
+fib 1054 1
+owo
+fib 1055 2
+fib 1056 1
+owo
+fib 1057 0
+owo
+fib 1058 5
+fib 1059 4
+fib 1060 3
+fib 1061 2
+fib 1062 1
+owo
+fib 1063 0
+owo
+fib 1064 1
+owo
+fib 1065 2
+fib 1066 1
+owo
+fib 1067 0
+owo
+fib 1068 3
+fib 1069 2
+fib 1070 1
+owo
+fib 1071 0
+owo
+fib 1072 1
+owo
+fib 1073 6
+fib 1074 5
+fib 1075 4
+fib 1076 3
+fib 1077 2
+fib 1078 1
+owo
+fib 1079 0
+owo
+fib 1080 1
+owo
+fib 1081 2
+fib 1082 1
+owo
+fib 1083 0
+owo
+fib 1084 3
+fib 1085 2
+fib 1086 1
+owo
+fib 1087 0
+owo
+fib 1088 1
+owo
+fib 1089 4
+fib 1090 3
+fib 1091 2
+fib 1092 1
+owo
+fib 1093 0
+owo
+fib 1094 1
+owo
+fib 1095 2
+fib 1096 1
+owo
+fib 1097 0
+owo
+fib 1098 7
+fib 1099 6
+fib 1100 5
+fib 1101 4
+fib 1102 3
+fib 1103 2
+fib 1104 1
+owo
+fib 1105 0
+owo
+fib 1106 1
+owo
+fib 1107 2
+fib 1108 1
+owo
+fib 1109 0
+owo
+fib 1110 3
+fib 1111 2
+fib 1112 1
+owo
+fib 1113 0
+owo
+fib 1114 1
+owo
+fib 1115 4
+fib 1116 3
+fib 1117 2
+fib 1118 1
+owo
+fib 1119 0
+owo
+fib 1120 1
+owo
+fib 1121 2
+fib 1122 1
+owo
+fib 1123 0
+owo
+fib 1124 5
+fib 1125 4
+fib 1126 3
+fib 1127 2
+fib 1128 1
+owo
+fib 1129 0
+owo
+fib 1130 1
+owo
+fib 1131 2
+fib 1132 1
+owo
+fib 1133 0
+owo
+fib 1134 3
+fib 1135 2
+fib 1136 1
+owo
+fib 1137 0
+owo
+fib 1138 1
+owo
+fib 1139 8
+fib 1140 7
+fib 1141 6
+fib 1142 5
+fib 1143 4
+fib 1144 3
+fib 1145 2
+fib 1146 1
+owo
+fib 1147 0
+owo
+fib 1148 1
+owo
+fib 1149 2
+fib 1150 1
+owo
+fib 1151 0
+owo
+fib 1152 3
+fib 1153 2
+fib 1154 1
+owo
+fib 1155 0
+owo
+fib 1156 1
+owo
+fib 1157 4
+fib 1158 3
+fib 1159 2
+fib 1160 1
+owo
+fib 1161 0
+owo
+fib 1162 1
+owo
+fib 1163 2
+fib 1164 1
+owo
+fib 1165 0
+owo
+fib 1166 5
+fib 1167 4
+fib 1168 3
+fib 1169 2
+fib 1170 1
+owo
+fib 1171 0
+owo
+fib 1172 1
+owo
+fib 1173 2
+fib 1174 1
+owo
+fib 1175 0
+owo
+fib 1176 3
+fib 1177 2
+fib 1178 1
+owo
+fib 1179 0
+owo
+fib 1180 1
+owo
+fib 1181 6
+fib 1182 5
+fib 1183 4
+fib 1184 3
+fib 1185 2
+fib 1186 1
+owo
+fib 1187 0
+owo
+fib 1188 1
+owo
+fib 1189 2
+fib 1190 1
+owo
+fib 1191 0
+owo
+fib 1192 3
+fib 1193 2
+fib 1194 1
+owo
+fib 1195 0
+owo
+fib 1196 1
+owo
+fib 1197 4
+fib 1198 3
+fib 1199 2
+fib 1200 1
+owo
+fib 1201 0
+owo
+fib 1202 1
+owo
+fib 1203 2
+fib 1204 1
+owo
+fib 1205 0
+owo
+
+exited

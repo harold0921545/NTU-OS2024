@@ -1,0 +1,1830 @@
+custom-6
+calc 0
+calc 1
+calc 2
+calc 3
+calc 4
+calc 5
+calc 6
+calc 7
+calc 8
+calc 9
+calc 10
+calc 11
+calc 12
+fib 0 1 0
+owo
+fib 1 2 1
+owo
+fib 2 3 2
+fib 3 4 3
+fib 4 5 4
+fib 5 6 5
+fib 6 7 6
+fib 7 8 7
+fib 8 9 8
+fib 9 10 9
+fib 10 11 10
+fib 11 12 11
+fib 12 13 12
+fib 2 14 1
+owo
+fib 3 15 2
+fib 4 16 3
+fib 5 17 4
+fib 6 18 5
+fib 7 19 6
+fib 8 20 7
+fib 9 21 8
+fib 10 22 9
+fib 11 23 10
+fib 12 24 11
+fib 2 25 0
+owo
+fib 3 26 1
+owo
+fib 4 27 2
+fib 5 28 3
+fib 6 29 4
+fib 7 30 5
+fib 8 31 6
+fib 9 32 7
+fib 10 33 8
+fib 11 34 9
+fib 12 35 10
+fib 3 36 0
+owo
+fib 4 37 1
+owo
+fib 5 38 2
+fib 6 39 3
+fib 7 40 4
+fib 8 41 5
+fib 9 42 6
+fib 10 43 7
+fib 11 44 8
+fib 12 45 9
+fib 4 46 0
+owo
+fib 5 47 1
+owo
+fib 6 48 2
+fib 7 49 3
+fib 8 50 4
+fib 9 51 5
+fib 10 52 6
+fib 11 53 7
+fib 12 54 8
+fib 3 55 1
+owo
+fib 5 56 0
+owo
+fib 6 57 1
+owo
+fib 7 58 2
+fib 8 59 3
+fib 9 60 4
+fib 10 61 5
+fib 11 62 6
+fib 12 63 7
+fib 4 64 1
+owo
+fib 6 65 0
+owo
+fib 7 66 1
+owo
+fib 8 67 2
+fib 9 68 3
+fib 10 69 4
+fib 11 70 5
+fib 12 71 6
+fib 5 72 1
+owo
+fib 7 73 0
+owo
+fib 8 74 1
+owo
+fib 9 75 2
+fib 10 76 3
+fib 11 77 4
+fib 12 78 5
+fib 4 79 2
+fib 6 80 1
+owo
+fib 8 81 0
+owo
+fib 9 82 1
+owo
+fib 10 83 2
+fib 11 84 3
+fib 12 85 4
+fib 4 86 1
+owo
+fib 5 87 2
+fib 7 88 1
+owo
+fib 9 89 0
+owo
+fib 10 90 1
+owo
+fib 11 91 2
+fib 12 92 3
+fib 4 93 0
+owo
+fib 5 94 1
+owo
+fib 6 95 2
+fib 8 96 1
+owo
+fib 10 97 0
+owo
+fib 11 98 1
+owo
+fib 12 99 2
+fib 5 100 0
+owo
+fib 6 101 1
+owo
+fib 7 102 2
+fib 9 103 1
+owo
+fib 11 104 0
+owo
+fib 12 105 1
+owo
+fib 6 106 0
+owo
+fib 7 107 1
+owo
+fib 8 108 2
+fib 10 109 1
+owo
+fib 12 110 0
+owo
+fib 7 111 0
+owo
+fib 8 112 1
+owo
+fib 9 113 2
+fib 11 114 1
+owo
+fib 5 115 3
+fib 8 116 0
+owo
+fib 9 117 1
+owo
+fib 10 118 2
+fib 12 119 1
+owo
+fib 5 120 2
+fib 6 121 3
+fib 9 122 0
+owo
+fib 10 123 1
+owo
+fib 11 124 2
+fib 5 125 1
+owo
+fib 6 126 2
+fib 7 127 3
+fib 10 128 0
+owo
+fib 11 129 1
+owo
+fib 12 130 2
+fib 5 131 0
+owo
+fib 6 132 1
+owo
+fib 7 133 2
+fib 8 134 3
+fib 11 135 0
+owo
+fib 12 136 1
+owo
+fib 6 137 0
+owo
+fib 7 138 1
+owo
+fib 8 139 2
+fib 9 140 3
+fib 12 141 0
+owo
+fib 5 142 1
+owo
+fib 7 143 0
+owo
+fib 8 144 1
+owo
+fib 9 145 2
+fib 10 146 3
+fib 6 147 1
+owo
+fib 8 148 0
+owo
+fib 9 149 1
+owo
+fib 10 150 2
+fib 11 151 3
+fib 7 152 1
+owo
+fib 9 153 0
+owo
+fib 10 154 1
+owo
+fib 11 155 2
+fib 12 156 3
+fib 8 157 1
+owo
+fib 10 158 0
+owo
+fib 11 159 1
+owo
+fib 12 160 2
+fib 6 161 4
+fib 9 162 1
+owo
+fib 11 163 0
+owo
+fib 12 164 1
+owo
+fib 6 165 3
+fib 7 166 4
+fib 10 167 1
+owo
+fib 12 168 0
+owo
+fib 6 169 2
+fib 7 170 3
+fib 8 171 4
+fib 11 172 1
+owo
+fib 6 173 1
+owo
+fib 7 174 2
+fib 8 175 3
+fib 9 176 4
+fib 12 177 1
+owo
+fib 6 178 0
+owo
+fib 7 179 1
+owo
+fib 8 180 2
+fib 9 181 3
+fib 10 182 4
+fib 7 183 0
+owo
+fib 8 184 1
+owo
+fib 9 185 2
+fib 10 186 3
+fib 11 187 4
+fib 6 188 1
+owo
+fib 8 189 0
+owo
+fib 9 190 1
+owo
+fib 10 191 2
+fib 11 192 3
+fib 12 193 4
+fib 7 194 1
+owo
+fib 9 195 0
+owo
+fib 10 196 1
+owo
+fib 11 197 2
+fib 12 198 3
+fib 6 199 2
+fib 8 200 1
+owo
+fib 10 201 0
+owo
+fib 11 202 1
+owo
+fib 12 203 2
+fib 6 204 1
+owo
+fib 7 205 2
+fib 9 206 1
+owo
+fib 11 207 0
+owo
+fib 12 208 1
+owo
+fib 6 209 0
+owo
+fib 7 210 1
+owo
+fib 8 211 2
+fib 10 212 1
+owo
+fib 12 213 0
+owo
+fib 7 214 0
+owo
+fib 8 215 1
+owo
+fib 9 216 2
+fib 11 217 1
+owo
+fib 8 218 0
+owo
+fib 9 219 1
+owo
+fib 10 220 2
+fib 12 221 1
+owo
+fib 9 222 0
+owo
+fib 10 223 1
+owo
+fib 11 224 2
+fib 10 225 0
+owo
+fib 11 226 1
+owo
+fib 12 227 2
+fib 7 228 5
+fib 11 229 0
+owo
+fib 12 230 1
+owo
+fib 7 231 4
+fib 8 232 5
+fib 12 233 0
+owo
+fib 7 234 3
+fib 8 235 4
+fib 9 236 5
+fib 7 237 2
+fib 8 238 3
+fib 9 239 4
+fib 10 240 5
+fib 7 241 1
+owo
+fib 8 242 2
+fib 9 243 3
+fib 10 244 4
+fib 11 245 5
+fib 7 246 0
+owo
+fib 8 247 1
+owo
+fib 9 248 2
+fib 10 249 3
+fib 11 250 4
+fib 12 251 5
+fib 8 252 0
+owo
+fib 9 253 1
+owo
+fib 10 254 2
+fib 11 255 3
+fib 12 256 4
+fib 7 257 1
+owo
+fib 9 258 0
+owo
+fib 10 259 1
+owo
+fib 11 260 2
+fib 12 261 3
+fib 8 262 1
+owo
+fib 10 263 0
+owo
+fib 11 264 1
+owo
+fib 12 265 2
+fib 7 266 2
+fib 9 267 1
+owo
+fib 11 268 0
+owo
+fib 12 269 1
+owo
+fib 7 270 1
+owo
+fib 8 271 2
+fib 10 272 1
+owo
+fib 12 273 0
+owo
+fib 7 274 0
+owo
+fib 8 275 1
+owo
+fib 9 276 2
+fib 11 277 1
+owo
+fib 8 278 0
+owo
+fib 9 279 1
+owo
+fib 10 280 2
+fib 12 281 1
+owo
+fib 9 282 0
+owo
+fib 10 283 1
+owo
+fib 11 284 2
+fib 7 285 3
+fib 10 286 0
+owo
+fib 11 287 1
+owo
+fib 12 288 2
+fib 7 289 2
+fib 8 290 3
+fib 11 291 0
+owo
+fib 12 292 1
+owo
+fib 7 293 1
+owo
+fib 8 294 2
+fib 9 295 3
+fib 12 296 0
+owo
+fib 7 297 0
+owo
+fib 8 298 1
+owo
+fib 9 299 2
+fib 10 300 3
+fib 8 301 0
+owo
+fib 9 302 1
+owo
+fib 10 303 2
+fib 11 304 3
+fib 7 305 1
+owo
+fib 9 306 0
+owo
+fib 10 307 1
+owo
+fib 11 308 2
+fib 12 309 3
+fib 8 310 1
+owo
+fib 10 311 0
+owo
+fib 11 312 1
+owo
+fib 12 313 2
+fib 9 314 1
+owo
+fib 11 315 0
+owo
+fib 12 316 1
+owo
+fib 10 317 1
+owo
+fib 12 318 0
+owo
+fib 11 319 1
+owo
+fib 8 320 6
+fib 12 321 1
+owo
+fib 8 322 5
+fib 9 323 6
+fib 8 324 4
+fib 9 325 5
+fib 10 326 6
+fib 8 327 3
+fib 9 328 4
+fib 10 329 5
+fib 11 330 6
+fib 8 331 2
+fib 9 332 3
+fib 10 333 4
+fib 11 334 5
+fib 12 335 6
+fib 8 336 1
+owo
+fib 9 337 2
+fib 10 338 3
+fib 11 339 4
+fib 12 340 5
+fib 8 341 0
+owo
+fib 9 342 1
+owo
+fib 10 343 2
+fib 11 344 3
+fib 12 345 4
+fib 9 346 0
+owo
+fib 10 347 1
+owo
+fib 11 348 2
+fib 12 349 3
+fib 8 350 1
+owo
+fib 10 351 0
+owo
+fib 11 352 1
+owo
+fib 12 353 2
+fib 9 354 1
+owo
+fib 11 355 0
+owo
+fib 12 356 1
+owo
+fib 8 357 2
+fib 10 358 1
+owo
+fib 12 359 0
+owo
+fib 8 360 1
+owo
+fib 9 361 2
+fib 11 362 1
+owo
+fib 8 363 0
+owo
+fib 9 364 1
+owo
+fib 10 365 2
+fib 12 366 1
+owo
+fib 9 367 0
+owo
+fib 10 368 1
+owo
+fib 11 369 2
+fib 10 370 0
+owo
+fib 11 371 1
+owo
+fib 12 372 2
+fib 8 373 3
+fib 11 374 0
+owo
+fib 12 375 1
+owo
+fib 8 376 2
+fib 9 377 3
+fib 12 378 0
+owo
+fib 8 379 1
+owo
+fib 9 380 2
+fib 10 381 3
+fib 8 382 0
+owo
+fib 9 383 1
+owo
+fib 10 384 2
+fib 11 385 3
+fib 9 386 0
+owo
+fib 10 387 1
+owo
+fib 11 388 2
+fib 12 389 3
+fib 8 390 1
+owo
+fib 10 391 0
+owo
+fib 11 392 1
+owo
+fib 12 393 2
+fib 9 394 1
+owo
+fib 11 395 0
+owo
+fib 12 396 1
+owo
+fib 10 397 1
+owo
+fib 12 398 0
+owo
+fib 8 399 4
+fib 11 400 1
+owo
+fib 8 401 3
+fib 9 402 4
+fib 12 403 1
+owo
+fib 8 404 2
+fib 9 405 3
+fib 10 406 4
+fib 8 407 1
+owo
+fib 9 408 2
+fib 10 409 3
+fib 11 410 4
+fib 8 411 0
+owo
+fib 9 412 1
+owo
+fib 10 413 2
+fib 11 414 3
+fib 12 415 4
+fib 9 416 0
+owo
+fib 10 417 1
+owo
+fib 11 418 2
+fib 12 419 3
+fib 8 420 1
+owo
+fib 10 421 0
+owo
+fib 11 422 1
+owo
+fib 12 423 2
+fib 9 424 1
+owo
+fib 11 425 0
+owo
+fib 12 426 1
+owo
+fib 8 427 2
+fib 10 428 1
+owo
+fib 12 429 0
+owo
+fib 8 430 1
+owo
+fib 9 431 2
+fib 11 432 1
+owo
+fib 8 433 0
+owo
+fib 9 434 1
+owo
+fib 10 435 2
+fib 12 436 1
+owo
+fib 9 437 0
+owo
+fib 10 438 1
+owo
+fib 11 439 2
+fib 10 440 0
+owo
+fib 11 441 1
+owo
+fib 12 442 2
+fib 11 443 0
+owo
+fib 12 444 1
+owo
+fib 12 445 0
+owo
+fib 9 446 7
+fib 9 447 6
+fib 10 448 7
+fib 9 449 5
+fib 10 450 6
+fib 11 451 7
+fib 9 452 4
+fib 10 453 5
+fib 11 454 6
+fib 12 455 7
+fib 9 456 3
+fib 10 457 4
+fib 11 458 5
+fib 12 459 6
+fib 9 460 2
+fib 10 461 3
+fib 11 462 4
+fib 12 463 5
+fib 9 464 1
+owo
+fib 10 465 2
+fib 11 466 3
+fib 12 467 4
+fib 9 468 0
+owo
+fib 10 469 1
+owo
+fib 11 470 2
+fib 12 471 3
+fib 10 472 0
+owo
+fib 11 473 1
+owo
+fib 12 474 2
+fib 9 475 1
+owo
+fib 11 476 0
+owo
+fib 12 477 1
+owo
+fib 10 478 1
+owo
+fib 12 479 0
+owo
+fib 9 480 2
+fib 11 481 1
+owo
+fib 9 482 1
+owo
+fib 10 483 2
+fib 12 484 1
+owo
+fib 9 485 0
+owo
+fib 10 486 1
+owo
+fib 11 487 2
+fib 10 488 0
+owo
+fib 11 489 1
+owo
+fib 12 490 2
+fib 11 491 0
+owo
+fib 12 492 1
+owo
+fib 9 493 3
+fib 12 494 0
+owo
+fib 9 495 2
+fib 10 496 3
+fib 9 497 1
+owo
+fib 10 498 2
+fib 11 499 3
+fib 9 500 0
+owo
+fib 10 501 1
+owo
+fib 11 502 2
+fib 12 503 3
+fib 10 504 0
+owo
+fib 11 505 1
+owo
+fib 12 506 2
+fib 9 507 1
+owo
+fib 11 508 0
+owo
+fib 12 509 1
+owo
+fib 10 510 1
+owo
+fib 12 511 0
+owo
+fib 11 512 1
+owo
+fib 9 513 4
+fib 12 514 1
+owo
+fib 9 515 3
+fib 10 516 4
+fib 9 517 2
+fib 10 518 3
+fib 11 519 4
+fib 9 520 1
+owo
+fib 10 521 2
+fib 11 522 3
+fib 12 523 4
+fib 9 524 0
+owo
+fib 10 525 1
+owo
+fib 11 526 2
+fib 12 527 3
+fib 10 528 0
+owo
+fib 11 529 1
+owo
+fib 12 530 2
+fib 9 531 1
+owo
+fib 11 532 0
+owo
+fib 12 533 1
+owo
+fib 10 534 1
+owo
+fib 12 535 0
+owo
+fib 9 536 2
+fib 11 537 1
+owo
+fib 9 538 1
+owo
+fib 10 539 2
+fib 12 540 1
+owo
+fib 9 541 0
+owo
+fib 10 542 1
+owo
+fib 11 543 2
+fib 10 544 0
+owo
+fib 11 545 1
+owo
+fib 12 546 2
+fib 11 547 0
+owo
+fib 12 548 1
+owo
+fib 12 549 0
+owo
+fib 9 550 5
+fib 9 551 4
+fib 10 552 5
+fib 9 553 3
+fib 10 554 4
+fib 11 555 5
+fib 9 556 2
+fib 10 557 3
+fib 11 558 4
+fib 12 559 5
+fib 9 560 1
+owo
+fib 10 561 2
+fib 11 562 3
+fib 12 563 4
+fib 9 564 0
+owo
+fib 10 565 1
+owo
+fib 11 566 2
+fib 12 567 3
+fib 10 568 0
+owo
+fib 11 569 1
+owo
+fib 12 570 2
+fib 9 571 1
+owo
+fib 11 572 0
+owo
+fib 12 573 1
+owo
+fib 10 574 1
+owo
+fib 12 575 0
+owo
+fib 9 576 2
+fib 11 577 1
+owo
+fib 9 578 1
+owo
+fib 10 579 2
+fib 12 580 1
+owo
+fib 9 581 0
+owo
+fib 10 582 1
+owo
+fib 11 583 2
+fib 10 584 0
+owo
+fib 11 585 1
+owo
+fib 12 586 2
+fib 11 587 0
+owo
+fib 12 588 1
+owo
+fib 9 589 3
+fib 12 590 0
+owo
+fib 9 591 2
+fib 10 592 3
+fib 9 593 1
+owo
+fib 10 594 2
+fib 11 595 3
+fib 9 596 0
+owo
+fib 10 597 1
+owo
+fib 11 598 2
+fib 12 599 3
+fib 10 600 0
+owo
+fib 11 601 1
+owo
+fib 12 602 2
+fib 9 603 1
+owo
+fib 11 604 0
+owo
+fib 12 605 1
+owo
+fib 10 606 1
+owo
+fib 12 607 0
+owo
+fib 11 608 1
+owo
+fib 12 609 1
+owo
+fib 10 610 8
+fib 10 611 7
+fib 11 612 8
+fib 10 613 6
+fib 11 614 7
+fib 12 615 8
+fib 10 616 5
+fib 11 617 6
+fib 12 618 7
+fib 10 619 4
+fib 11 620 5
+fib 12 621 6
+fib 10 622 3
+fib 11 623 4
+fib 12 624 5
+fib 10 625 2
+fib 11 626 3
+fib 12 627 4
+fib 10 628 1
+owo
+fib 11 629 2
+fib 12 630 3
+fib 10 631 0
+owo
+fib 11 632 1
+owo
+fib 12 633 2
+fib 11 634 0
+owo
+fib 12 635 1
+owo
+fib 10 636 1
+owo
+fib 12 637 0
+owo
+fib 11 638 1
+owo
+fib 10 639 2
+fib 12 640 1
+owo
+fib 10 641 1
+owo
+fib 11 642 2
+fib 10 643 0
+owo
+fib 11 644 1
+owo
+fib 12 645 2
+fib 11 646 0
+owo
+fib 12 647 1
+owo
+fib 12 648 0
+owo
+fib 10 649 3
+fib 10 650 2
+fib 11 651 3
+fib 10 652 1
+owo
+fib 11 653 2
+fib 12 654 3
+fib 10 655 0
+owo
+fib 11 656 1
+owo
+fib 12 657 2
+fib 11 658 0
+owo
+fib 12 659 1
+owo
+fib 10 660 1
+owo
+fib 12 661 0
+owo
+fib 11 662 1
+owo
+fib 12 663 1
+owo
+fib 10 664 4
+fib 10 665 3
+fib 11 666 4
+fib 10 667 2
+fib 11 668 3
+fib 12 669 4
+fib 10 670 1
+owo
+fib 11 671 2
+fib 12 672 3
+fib 10 673 0
+owo
+fib 11 674 1
+owo
+fib 12 675 2
+fib 11 676 0
+owo
+fib 12 677 1
+owo
+fib 10 678 1
+owo
+fib 12 679 0
+owo
+fib 11 680 1
+owo
+fib 10 681 2
+fib 12 682 1
+owo
+fib 10 683 1
+owo
+fib 11 684 2
+fib 10 685 0
+owo
+fib 11 686 1
+owo
+fib 12 687 2
+fib 11 688 0
+owo
+fib 12 689 1
+owo
+fib 12 690 0
+owo
+fib 10 691 5
+fib 10 692 4
+fib 11 693 5
+fib 10 694 3
+fib 11 695 4
+fib 12 696 5
+fib 10 697 2
+fib 11 698 3
+fib 12 699 4
+fib 10 700 1
+owo
+fib 11 701 2
+fib 12 702 3
+fib 10 703 0
+owo
+fib 11 704 1
+owo
+fib 12 705 2
+fib 11 706 0
+owo
+fib 12 707 1
+owo
+fib 10 708 1
+owo
+fib 12 709 0
+owo
+fib 11 710 1
+owo
+fib 10 711 2
+fib 12 712 1
+owo
+fib 10 713 1
+owo
+fib 11 714 2
+fib 10 715 0
+owo
+fib 11 716 1
+owo
+fib 12 717 2
+fib 11 718 0
+owo
+fib 12 719 1
+owo
+fib 12 720 0
+owo
+fib 10 721 3
+fib 10 722 2
+fib 11 723 3
+fib 10 724 1
+owo
+fib 11 725 2
+fib 12 726 3
+fib 10 727 0
+owo
+fib 11 728 1
+owo
+fib 12 729 2
+fib 11 730 0
+owo
+fib 12 731 1
+owo
+fib 10 732 1
+owo
+fib 12 733 0
+owo
+fib 11 734 1
+owo
+fib 12 735 1
+owo
+fib 10 736 6
+fib 10 737 5
+fib 11 738 6
+fib 10 739 4
+fib 11 740 5
+fib 12 741 6
+fib 10 742 3
+fib 11 743 4
+fib 12 744 5
+fib 10 745 2
+fib 11 746 3
+fib 12 747 4
+fib 10 748 1
+owo
+fib 11 749 2
+fib 12 750 3
+fib 10 751 0
+owo
+fib 11 752 1
+owo
+fib 12 753 2
+fib 11 754 0
+owo
+fib 12 755 1
+owo
+fib 10 756 1
+owo
+fib 12 757 0
+owo
+fib 11 758 1
+owo
+fib 10 759 2
+fib 12 760 1
+owo
+fib 10 761 1
+owo
+fib 11 762 2
+fib 10 763 0
+owo
+fib 11 764 1
+owo
+fib 12 765 2
+fib 11 766 0
+owo
+fib 12 767 1
+owo
+fib 12 768 0
+owo
+fib 10 769 3
+fib 10 770 2
+fib 11 771 3
+fib 10 772 1
+owo
+fib 11 773 2
+fib 12 774 3
+fib 10 775 0
+owo
+fib 11 776 1
+owo
+fib 12 777 2
+fib 11 778 0
+owo
+fib 12 779 1
+owo
+fib 10 780 1
+owo
+fib 12 781 0
+owo
+fib 11 782 1
+owo
+fib 12 783 1
+owo
+fib 10 784 4
+fib 10 785 3
+fib 11 786 4
+fib 10 787 2
+fib 11 788 3
+fib 12 789 4
+fib 10 790 1
+owo
+fib 11 791 2
+fib 12 792 3
+fib 10 793 0
+owo
+fib 11 794 1
+owo
+fib 12 795 2
+fib 11 796 0
+owo
+fib 12 797 1
+owo
+fib 10 798 1
+owo
+fib 12 799 0
+owo
+fib 11 800 1
+owo
+fib 10 801 2
+fib 12 802 1
+owo
+fib 10 803 1
+owo
+fib 11 804 2
+fib 10 805 0
+owo
+fib 11 806 1
+owo
+fib 12 807 2
+fib 11 808 0
+owo
+fib 12 809 1
+owo
+fib 12 810 0
+owo
+fib 11 811 9
+fib 11 812 8
+fib 12 813 9
+fib 11 814 7
+fib 12 815 8
+fib 11 816 6
+fib 12 817 7
+fib 11 818 5
+fib 12 819 6
+fib 11 820 4
+fib 12 821 5
+fib 11 822 3
+fib 12 823 4
+fib 11 824 2
+fib 12 825 3
+fib 11 826 1
+owo
+fib 12 827 2
+fib 11 828 0
+owo
+fib 12 829 1
+owo
+fib 12 830 0
+owo
+fib 11 831 1
+owo
+fib 12 832 1
+owo
+fib 11 833 2
+fib 11 834 1
+owo
+fib 12 835 2
+fib 11 836 0
+owo
+fib 12 837 1
+owo
+fib 12 838 0
+owo
+fib 11 839 3
+fib 11 840 2
+fib 12 841 3
+fib 11 842 1
+owo
+fib 12 843 2
+fib 11 844 0
+owo
+fib 12 845 1
+owo
+fib 12 846 0
+owo
+fib 11 847 1
+owo
+fib 12 848 1
+owo
+fib 11 849 4
+fib 11 850 3
+fib 12 851 4
+fib 11 852 2
+fib 12 853 3
+fib 11 854 1
+owo
+fib 12 855 2
+fib 11 856 0
+owo
+fib 12 857 1
+owo
+fib 12 858 0
+owo
+fib 11 859 1
+owo
+fib 12 860 1
+owo
+fib 11 861 2
+fib 11 862 1
+owo
+fib 12 863 2
+fib 11 864 0
+owo
+fib 12 865 1
+owo
+fib 12 866 0
+owo
+fib 11 867 5
+fib 11 868 4
+fib 12 869 5
+fib 11 870 3
+fib 12 871 4
+fib 11 872 2
+fib 12 873 3
+fib 11 874 1
+owo
+fib 12 875 2
+fib 11 876 0
+owo
+fib 12 877 1
+owo
+fib 12 878 0
+owo
+fib 11 879 1
+owo
+fib 12 880 1
+owo
+fib 11 881 2
+fib 11 882 1
+owo
+fib 12 883 2
+fib 11 884 0
+owo
+fib 12 885 1
+owo
+fib 12 886 0
+owo
+fib 11 887 3
+fib 11 888 2
+fib 12 889 3
+fib 11 890 1
+owo
+fib 12 891 2
+fib 11 892 0
+owo
+fib 12 893 1
+owo
+fib 12 894 0
+owo
+fib 11 895 1
+owo
+fib 12 896 1
+owo
+fib 11 897 6
+fib 11 898 5
+fib 12 899 6
+fib 11 900 4
+fib 12 901 5
+fib 11 902 3
+fib 12 903 4
+fib 11 904 2
+fib 12 905 3
+fib 11 906 1
+owo
+fib 12 907 2
+fib 11 908 0
+owo
+fib 12 909 1
+owo
+fib 12 910 0
+owo
+fib 11 911 1
+owo
+fib 12 912 1
+owo
+fib 11 913 2
+fib 11 914 1
+owo
+fib 12 915 2
+fib 11 916 0
+owo
+fib 12 917 1
+owo
+fib 12 918 0
+owo
+fib 11 919 3
+fib 11 920 2
+fib 12 921 3
+fib 11 922 1
+owo
+fib 12 923 2
+fib 11 924 0
+owo
+fib 12 925 1
+owo
+fib 12 926 0
+owo
+fib 11 927 1
+owo
+fib 12 928 1
+owo
+fib 11 929 4
+fib 11 930 3
+fib 12 931 4
+fib 11 932 2
+fib 12 933 3
+fib 11 934 1
+owo
+fib 12 935 2
+fib 11 936 0
+owo
+fib 12 937 1
+owo
+fib 12 938 0
+owo
+fib 11 939 1
+owo
+fib 12 940 1
+owo
+fib 11 941 2
+fib 11 942 1
+owo
+fib 12 943 2
+fib 11 944 0
+owo
+fib 12 945 1
+owo
+fib 12 946 0
+owo
+fib 11 947 7
+fib 11 948 6
+fib 12 949 7
+fib 11 950 5
+fib 12 951 6
+fib 11 952 4
+fib 12 953 5
+fib 11 954 3
+fib 12 955 4
+fib 11 956 2
+fib 12 957 3
+fib 11 958 1
+owo
+fib 12 959 2
+fib 11 960 0
+owo
+fib 12 961 1
+owo
+fib 12 962 0
+owo
+fib 11 963 1
+owo
+fib 12 964 1
+owo
+fib 11 965 2
+fib 11 966 1
+owo
+fib 12 967 2
+fib 11 968 0
+owo
+fib 12 969 1
+owo
+fib 12 970 0
+owo
+fib 11 971 3
+fib 11 972 2
+fib 12 973 3
+fib 11 974 1
+owo
+fib 12 975 2
+fib 11 976 0
+owo
+fib 12 977 1
+owo
+fib 12 978 0
+owo
+fib 11 979 1
+owo
+fib 12 980 1
+owo
+fib 11 981 4
+fib 11 982 3
+fib 12 983 4
+fib 11 984 2
+fib 12 985 3
+fib 11 986 1
+owo
+fib 12 987 2
+fib 11 988 0
+owo
+fib 12 989 1
+owo
+fib 12 990 0
+owo
+fib 11 991 1
+owo
+fib 12 992 1
+owo
+fib 11 993 2
+fib 11 994 1
+owo
+fib 12 995 2
+fib 11 996 0
+owo
+fib 12 997 1
+owo
+fib 12 998 0
+owo
+fib 11 999 5
+fib 11 1000 4
+fib 12 1001 5
+fib 11 1002 3
+fib 12 1003 4
+fib 11 1004 2
+fib 12 1005 3
+fib 11 1006 1
+owo
+fib 12 1007 2
+fib 11 1008 0
+owo
+fib 12 1009 1
+owo
+fib 12 1010 0
+owo
+fib 11 1011 1
+owo
+fib 12 1012 1
+owo
+fib 11 1013 2
+fib 11 1014 1
+owo
+fib 12 1015 2
+fib 11 1016 0
+owo
+fib 12 1017 1
+owo
+fib 12 1018 0
+owo
+fib 11 1019 3
+fib 11 1020 2
+fib 12 1021 3
+fib 11 1022 1
+owo
+fib 12 1023 2
+fib 11 1024 0
+owo
+fib 12 1025 1
+owo
+fib 12 1026 0
+owo
+fib 11 1027 1
+owo
+fib 12 1028 1
+owo
+fib 12 1029 10
+fib 12 1030 9
+fib 12 1031 8
+fib 12 1032 7
+fib 12 1033 6
+fib 12 1034 5
+fib 12 1035 4
+fib 12 1036 3
+fib 12 1037 2
+fib 12 1038 1
+owo
+fib 12 1039 0
+owo
+fib 12 1040 1
+owo
+fib 12 1041 2
+fib 12 1042 1
+owo
+fib 12 1043 0
+owo
+fib 12 1044 3
+fib 12 1045 2
+fib 12 1046 1
+owo
+fib 12 1047 0
+owo
+fib 12 1048 1
+owo
+fib 12 1049 4
+fib 12 1050 3
+fib 12 1051 2
+fib 12 1052 1
+owo
+fib 12 1053 0
+owo
+fib 12 1054 1
+owo
+fib 12 1055 2
+fib 12 1056 1
+owo
+fib 12 1057 0
+owo
+fib 12 1058 5
+fib 12 1059 4
+fib 12 1060 3
+fib 12 1061 2
+fib 12 1062 1
+owo
+fib 12 1063 0
+owo
+fib 12 1064 1
+owo
+fib 12 1065 2
+fib 12 1066 1
+owo
+fib 12 1067 0
+owo
+fib 12 1068 3
+fib 12 1069 2
+fib 12 1070 1
+owo
+fib 12 1071 0
+owo
+fib 12 1072 1
+owo
+fib 12 1073 6
+fib 12 1074 5
+fib 12 1075 4
+fib 12 1076 3
+fib 12 1077 2
+fib 12 1078 1
+owo
+fib 12 1079 0
+owo
+fib 12 1080 1
+owo
+fib 12 1081 2
+fib 12 1082 1
+owo
+fib 12 1083 0
+owo
+fib 12 1084 3
+fib 12 1085 2
+fib 12 1086 1
+owo
+fib 12 1087 0
+owo
+fib 12 1088 1
+owo
+fib 12 1089 4
+fib 12 1090 3
+fib 12 1091 2
+fib 12 1092 1
+owo
+fib 12 1093 0
+owo
+fib 12 1094 1
+owo
+fib 12 1095 2
+fib 12 1096 1
+owo
+fib 12 1097 0
+owo
+fib 12 1098 7
+fib 12 1099 6
+fib 12 1100 5
+fib 12 1101 4
+fib 12 1102 3
+fib 12 1103 2
+fib 12 1104 1
+owo
+fib 12 1105 0
+owo
+fib 12 1106 1
+owo
+fib 12 1107 2
+fib 12 1108 1
+owo
+fib 12 1109 0
+owo
+fib 12 1110 3
+fib 12 1111 2
+fib 12 1112 1
+owo
+fib 12 1113 0
+owo
+fib 12 1114 1
+owo
+fib 12 1115 4
+fib 12 1116 3
+fib 12 1117 2
+fib 12 1118 1
+owo
+fib 12 1119 0
+owo
+fib 12 1120 1
+owo
+fib 12 1121 2
+fib 12 1122 1
+owo
+fib 12 1123 0
+owo
+fib 12 1124 5
+fib 12 1125 4
+fib 12 1126 3
+fib 12 1127 2
+fib 12 1128 1
+owo
+fib 12 1129 0
+owo
+fib 12 1130 1
+owo
+fib 12 1131 2
+fib 12 1132 1
+owo
+fib 12 1133 0
+owo
+fib 12 1134 3
+fib 12 1135 2
+fib 12 1136 1
+owo
+fib 12 1137 0
+owo
+fib 12 1138 1
+owo
+fib 12 1139 8
+fib 12 1140 7
+fib 12 1141 6
+fib 12 1142 5
+fib 12 1143 4
+fib 12 1144 3
+fib 12 1145 2
+fib 12 1146 1
+owo
+fib 12 1147 0
+owo
+fib 12 1148 1
+owo
+fib 12 1149 2
+fib 12 1150 1
+owo
+fib 12 1151 0
+owo
+fib 12 1152 3
+fib 12 1153 2
+fib 12 1154 1
+owo
+fib 12 1155 0
+owo
+fib 12 1156 1
+owo
+fib 12 1157 4
+fib 12 1158 3
+fib 12 1159 2
+fib 12 1160 1
+owo
+fib 12 1161 0
+owo
+fib 12 1162 1
+owo
+fib 12 1163 2
+fib 12 1164 1
+owo
+fib 12 1165 0
+owo
+fib 12 1166 5
+fib 12 1167 4
+fib 12 1168 3
+fib 12 1169 2
+fib 12 1170 1
+owo
+fib 12 1171 0
+owo
+fib 12 1172 1
+owo
+fib 12 1173 2
+fib 12 1174 1
+owo
+fib 12 1175 0
+owo
+fib 12 1176 3
+fib 12 1177 2
+fib 12 1178 1
+owo
+fib 12 1179 0
+owo
+fib 12 1180 1
+owo
+fib 12 1181 6
+fib 12 1182 5
+fib 12 1183 4
+fib 12 1184 3
+fib 12 1185 2
+fib 12 1186 1
+owo
+fib 12 1187 0
+owo
+fib 12 1188 1
+owo
+fib 12 1189 2
+fib 12 1190 1
+owo
+fib 12 1191 0
+owo
+fib 12 1192 3
+fib 12 1193 2
+fib 12 1194 1
+owo
+fib 12 1195 0
+owo
+fib 12 1196 1
+owo
+fib 12 1197 4
+fib 12 1198 3
+fib 12 1199 2
+fib 12 1200 1
+owo
+fib 12 1201 0
+owo
+fib 12 1202 1
+owo
+fib 12 1203 2
+fib 12 1204 1
+owo
+fib 12 1205 0
+owo
+
+exited

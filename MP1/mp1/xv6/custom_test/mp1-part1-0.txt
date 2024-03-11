@@ -1,0 +1,28 @@
+mp1-part1-0
+thread 1: 100
+thread 2: 0
+thread 3: 10000
+thread 1: 101
+thread 2: 1
+thread 3: 10001
+thread 1: 102
+thread 2: 2
+thread 3: 10002
+thread 1: 103
+thread 2: 3
+thread 3: 10003
+thread 1: 104
+thread 2: 4
+thread 3: 10004
+thread 1: 105
+thread 2: 5
+thread 1: 106
+thread 2: 6
+thread 1: 107
+thread 2: 7
+thread 1: 108
+thread 2: 8
+thread 1: 109
+thread 2: 9
+
+exited

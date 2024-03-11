@@ -13,6 +13,7 @@ struct task{
     jmp_buf env; // for thread function
     int buf_set; // 1: indicate jmp_buf (env) has been set, 0: indicate jmp_buf (env) not set
     struct task *prev;
+    struct task *nxt;
 };
 
 struct thread {
