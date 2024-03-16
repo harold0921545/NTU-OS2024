@@ -5,6 +5,7 @@
 #define NULL 0
 
 static struct thread* current_thread = NULL;
+static struct task* current_task = NULL;
 static int id = 1;
 static jmp_buf env_st;
 // static jmp_buf env_tmp;
@@ -41,14 +42,14 @@ void thread_add_runqueue(struct thread *t){
 }
 void thread_yield(void){
     //fprintf(2, "thread_yield\n");
-    if (current_thread->top == NULL){
+    if (current_task == NULL){
         if (setjmp(current_thread->env) == 0){
             schedule();
             dispatch();
         }
     }
     else{
-        if (setjmp(current_thread->top->env) == 0){
+        if (setjmp(current_task->env) == 0){
             schedule();
             dispatch();
         }
@@ -56,26 +57,32 @@ void thread_yield(void){
 }
 void task_exit(){
     //fprintf(2, "task_exit\n");
-    struct task *tsk = current_thread->top;
-    current_thread->top = tsk->prev;
-    free(tsk->stack);
-    free(tsk);
+    if (current_task->prev != NULL)
+        current_task->prev->nxt = current_task->nxt;
+    if (current_task->nxt != NULL)
+        current_task->nxt->prev = current_task->prev;
+    if (current_thread->top == current_task)
+        current_thread->top = current_task->prev;
+    free(current_task->stack);
+    free(current_task);
+    current_task = NULL;
 }
 void dispatch(void){
     // TODO
     //fprintf(2, "dispatch\n");
     while (current_thread->top != NULL){
-        if (current_thread->top->buf_set == 0){
-            current_thread->top->buf_set = 1;
-            if (setjmp(current_thread->top->env) == 0){
-                current_thread->top->env->sp = (unsigned long)current_thread->top->stack_p;
-                longjmp(current_thread->top->env, 1);
+        current_task = current_thread->top;
+        if (current_task->buf_set == 0){
+            current_task->buf_set = 1;
+            if (setjmp(current_task->env) == 0){
+                current_task->env->sp = (unsigned long)current_task->stack_p;
+                longjmp(current_task->env, 1);
             }
-            current_thread->top->fp(current_thread->top->arg);
+            current_task->fp(current_task->arg);
             task_exit();
         }
         else
-            longjmp(current_thread->top->env, 1);
+            longjmp(current_task->env, 1);
     }
     // thread doesn't have task
     if (current_thread->buf_set == 0){
@@ -93,6 +100,7 @@ void dispatch(void){
 void schedule(void){
     //fprintf(2, "schedule\n");
     current_thread = current_thread->next;
+    current_task = NULL;
 }
 void thread_exit(void){
     //fprintf(2, "thread_exit\n");
@@ -105,6 +113,7 @@ void thread_exit(void){
         struct task *tsk = tmp->top;
         while (tsk != NULL){
             struct task *tp = tsk->prev;
+            free(tsk->stack);
             free(tsk);
             tsk = tp;
         }
@@ -118,6 +127,7 @@ void thread_exit(void){
         struct task *tsk = current_thread->top;
         while (tsk != NULL){
             struct task *tp = tsk->prev;
+            free(tsk->stack);
             free(tsk);
             tsk = tp;
         }
@@ -151,15 +161,6 @@ void thread_assign_task(struct thread *t, void (*f)(void *), void *arg){
     tsk->stack = (void*) new_stack;
     tsk->stack_p = (void*) new_stack_p;
     tsk->prev = t->top;
+    if (t->top != NULL) t->top->nxt = tsk;
     t->top = tsk;
-    if (t == current_thread){
-        if (tsk->prev != NULL){
-            if (tsk->prev->buf_set != 0)
-                setjmp(tsk->prev->env);
-        }
-        else{
-            if (t->buf_set != 0)
-                setjmp(t->env);
-        }
-    }
 }
