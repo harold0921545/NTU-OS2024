@@ -35,7 +35,7 @@ void thread_add_runqueue(struct thread *t){
     }
     else{
         t->previous = current_thread->previous;
-        (current_thread->previous)->next = t;
+        current_thread->previous->next = t;
         t->next = current_thread;
         current_thread->previous = t;
     }
@@ -85,6 +85,7 @@ void dispatch(void){
             longjmp(current_task->env, 1);
     }
     // thread doesn't have task
+    current_task = NULL;
     if (current_thread->buf_set == 0){
         current_thread->buf_set = 1;
         if (setjmp(current_thread->env) == 0){
@@ -140,8 +141,7 @@ void thread_exit(void){
 void thread_start_threading(void){
     // TODO
     //fprintf(2, "thread_start_threading\n");
-    if (current_thread == NULL)
-        return;
+    if (current_thread == NULL) return;
     if (setjmp(env_st) == 0)
         dispatch();
 }
@@ -161,6 +161,7 @@ void thread_assign_task(struct thread *t, void (*f)(void *), void *arg){
     tsk->stack = (void*) new_stack;
     tsk->stack_p = (void*) new_stack_p;
     tsk->prev = t->top;
+    tsk->nxt = NULL;
     if (t->top != NULL) t->top->nxt = tsk;
     t->top = tsk;
 }
