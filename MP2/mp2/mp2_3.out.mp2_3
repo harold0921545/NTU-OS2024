@@ -1,14 +1,18 @@
-*** Now run 'gdb' in another window.
 
 xv6 kernel is booting
 
-hart 1 starting
 hart 2 starting
+hart 1 starting
 init: starting sh
 $ mp2_3
+page table 0x0000000000002fe0
 FUCK YOU
+page table 0x0000000000001001
 FUCK YOU
+page table 0x0000000000002000
 FUCK YOU
+page table 0x0000000000002000
 FUCK YOU
+page table 0x0000000000002000
 FUCK YOU
-$ qemu-system-riscv64: terminating on signal 15 from pid 3654 (make)
+$ qemu-system-riscv64: terminating on signal 15 from pid 946 (make)

@@ -543,8 +543,42 @@ void pgprint() {
 
 /* NTU OS 2024 */
 /* Print multi layer page table. */
+void Vmprint(pagetable_t pagetable, uint64 lev, int last, int p, uint64 va){
+  for (uint64 i = 0; i < 512; ++i){
+    pte_t *pte = &pagetable[i];
+    if (*pte & PTE_V){
+      if (lev < 2){
+        if (p < last)
+          printf("|   ");
+        else
+          printf("    ");
+        if (lev == 0)
+          printf("    ");
+      }
+      printf("+-- %d: pte=%p va=%p pa=%p V", i, pte, va | (i << (lev * 9 + 12)), PTE2PA(*pte));
+      if (*pte & PTE_R) printf(" R");
+      if (*pte & PTE_W) printf(" W");
+      if (*pte & PTE_X) printf(" X");
+      if (*pte & PTE_U) printf(" U");
+      if (*pte & PTE_D) printf(" D");
+      printf("\n");
+      if ((*pte & (PTE_R|PTE_W|PTE_X)) == 0){
+        uint64 ch = PTE2PA(*pte);
+        dfs((pagetable_t)ch, lev - 1, last, (lev == 2 ? i : p), va | (i << (lev * 9 + 12)));
+      }
+    }
+  }
+}
 void vmprint(pagetable_t pagetable) {
   /* TODO */
-  //panic("not implemented yet\n");
-  printf("FUCK YOU\n");
+  printf("page table %p\n", pagetable);
+  int last = 0;
+  for (int i = 511; i >= 0; --i){
+    pte_t *pte = &pagetable[i];
+    if (*pte & PTE_V){
+      last = i;
+      break;
+    }
+  }
+  Vmprint(pagetable, 2, last, -1, 0);
 }

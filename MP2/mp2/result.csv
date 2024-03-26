@@ -1,6 +1,4 @@
 make[1]: Entering directory '/root'
-fatal: not a git repository (or any parent up to mount point /)
-Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 riscv64-linux-gnu-gcc    -c -o kernel/entry.o kernel/entry.S
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/kalloc.o kernel/kalloc.c
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/string.o kernel/string.c
@@ -43,25 +41,9 @@ riscv64-linux-gnu-objdump -S kernel/kernel > kernel/kernel.asm
 riscv64-linux-gnu-objdump -t kernel/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym
 make[1]: Leaving directory '/root'
 == Test mp2_1 (6%) ==
-fatal: not a git repository (or any parent up to mount point /)
-Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
-mp2_1: FAIL (2.4s) 
-    Line 97 do not match.
-    QEMU output saved to mp2_1.out.mp2_1
+mp2_1: OK (2.8s) 
 == Test mp2_2 (12%) ==
-mp2_2: FAIL (0.8s) 
-    Line 10 do not match.
+mp2_2: FAIL (1.0s) 
+    Line 18 do not match.
     QEMU output saved to mp2_2.out.mp2_2
 == Test mp2_3 (12%) ==
-mp2_3: FAIL (1.0s) 
-    Line 10 do not match.
-    QEMU output saved to mp2_3.out.mp2_3
-== Test mp2_4 (12%) ==
-mp2_4: FAIL (3.3s) 
-    Line 105 do not match.
-    QEMU output saved to mp2_4.out.mp2_4
-== Test mp2_5 (18%) ==
-mp2_5: FAIL (3.0s) 
-    Line 105 do not match.
-    QEMU output saved to mp2_5.out.mp2_5
-Score: 0/60

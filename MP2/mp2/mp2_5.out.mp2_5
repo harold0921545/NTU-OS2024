@@ -89,8 +89,8 @@ balloc: write bitmap block at sector 45
 
 xv6 kernel is booting
 
-hart 1 starting
 hart 2 starting
+hart 1 starting
 init: starting sh
 $ mp2_5
 FUCK YOU
@@ -100,4 +100,4 @@ After madvise(MADV_DONTNEED)
 FUCK YOU
 usertrap(): unexpected scause 0x000000000000000f pid=3
             sepc=0x000000000000007c stval=0x0000000000008000
-$ qemu-system-riscv64: terminating on signal 15 from pid 4566 (make)
+$ qemu-system-riscv64: terminating on signal 15 from pid 1859 (make)
