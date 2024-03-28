@@ -495,6 +495,20 @@ int madvise(uint64 base, uint64 len, int advice) {
     return 0;
   } else if (advice == MADV_WILLNEED) {
     // TODO
+    pte_t *pte;
+    for (uint64 va = begin; va <= last; va += PGSIZE) {
+      pte = walk(pgtbl, va, 0);
+      // printf("dontneed: %p\n",pte);
+      if (pte != 0 && (*pte & PTE_S)) {
+        char *pa = kalloc();
+        uint blockno = PTE2BLOCKNO(*pte);
+        
+        read_page_from_disk(ROOTDEV, pa, blockno);
+        bfree_page(ROOTDEV, blockno);
+
+        *pte = (PA2PTE(pa) | PTE_FLAGS(*pte) | PTE_V) & ~PTE_S;
+      }
+    }
   } else if (advice == MADV_DONTNEED) {
     begin_op();
 
