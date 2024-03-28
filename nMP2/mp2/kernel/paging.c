@@ -28,10 +28,11 @@ int handle_pgfault() {
   uint64 va = r_stval();
   struct proc *p = myproc();
   pagetable_t pagetable = p->pagetable;
-  // pte_t *pte = walk(pagetable, PGROUNDDOWN(va), 0); ???
+  pte_t *pte = walk(pagetable, va, 0);
+  uint64 flags = PTE_FLAGS(*pte) & ~PTE_S;
 
   char *pa = kalloc();
   memset(pa, 0, PGSIZE);
-  if(mappages(pagetable, PGROUNDDOWN(va), PGSIZE, (uint64)pa, PTE_U | PTE_R | PTE_W | PTE_X) != 0)
+  if(mappages(pagetable, PGROUNDDOWN(va), PGSIZE, (uint64)pa, flags | PTE_U | PTE_R | PTE_W | PTE_X) != 0)
     kfree(pa);
 }
