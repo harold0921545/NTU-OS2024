@@ -486,12 +486,6 @@ int madvise(uint64 base, uint64 len, int advice) {
   uint64 last = PGROUNDDOWN(base + len - 1);
 
   if (advice == MADV_NORMAL) {
-    pte_t *pte;
-    for (uint64 va = begin; va <= last; va += PGSIZE) {
-      pte = walk(pgtbl, va, 0);
-      if (pte == 0 || (*pte & PTE_V) == 0)
-        return -1;
-    }
     return 0;
   } else if (advice == MADV_WILLNEED) {
     // TODO
@@ -501,6 +495,8 @@ int madvise(uint64 base, uint64 len, int advice) {
       // printf("dontneed: %p\n",pte);
       if (pte != 0 && (*pte & PTE_S)) {
         char *pa = kalloc();
+        if (pa == 0)
+          return -1;
         uint blockno = PTE2BLOCKNO(*pte);
         
         read_page_from_disk(ROOTDEV, pa, blockno);
@@ -509,6 +505,7 @@ int madvise(uint64 base, uint64 len, int advice) {
         *pte = (PA2PTE(pa) | PTE_FLAGS(*pte) | PTE_V) & ~PTE_S;
       }
     }
+    return 0;
   } else if (advice == MADV_DONTNEED) {
     begin_op();
 
@@ -539,9 +536,21 @@ int madvise(uint64 base, uint64 len, int advice) {
     return 0;
 
   } else if(advice == MADV_PIN) {
-    // TODO
+    pte_t *pte;
+    for (uint64 va = begin; va <= last; va += PGSIZE) {
+      pte = walk(pgtbl, va, 0);
+      if (pte != 0 && (*pte & PTE_V))
+        *pte |= PTE_P;
+    }
+    return 0;
   } else if(advice == MADV_UNPIN) {
-    // TODO
+    pte_t *pte;
+    for (uint64 va = begin; va <= last; va += PGSIZE) {
+      pte = walk(pgtbl, va, 0);
+      if (pte != 0 && (*pte & PTE_V))
+        *pte &= ~PTE_P;
+    }
+    return 0;
   }
   else {
     return -1;
@@ -552,12 +561,14 @@ int madvise(uint64 base, uint64 len, int advice) {
 /* print pages from page replacement buffers */
 #if defined(PG_REPLACEMENT_USE_LRU) || defined(PG_REPLACEMENT_USE_FIFO)
 void pgprint() {
+  printf("Page replacement buffers\n");
+  printf("------Start------------\n");
   #ifdef PG_REPLACEMENT_USE_LRU
   // TODO
   #elif defined(PG_REPLACEMENT_USE_FIFO)
   // TODO
   #endif
-  panic("not implemented yet\n");
+  printf("------End--------------\n");
 }
 #endif
 
