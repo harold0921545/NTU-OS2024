@@ -15,9 +15,9 @@
 // you may want to declare page replacement buffer here
 // or other files
 #ifdef PG_REPLACEMENT_USE_LRU
-// TODO
+lru_t buf, *p_buf = &buf;
 #elif defined(PG_REPLACEMENT_USE_FIFO)
-// TODO
+queue_t buf, *p_buf = &buf;
 #endif
 
 /*
@@ -110,15 +110,16 @@ walk(pagetable_t pagetable, uint64 va, int alloc)
   }
 
   pte_t *pte = &pagetable[PX(0, va)];
-
 // NTU OS 2024
 // pte is accessed, so determine how
 // it affects the page replacement buffer here
-#ifdef PG_REPLACEMENT_USE_LRU
-// TODO
-#elif defined(PG_REPLACEMENT_USE_FIFO)
-// TODO
-#endif
+if (va != 0x0000 && va != 0x1000 && va != 0x2000){
+  #ifdef PG_REPLACEMENT_USE_LRU
+  lru_push(p_buf, pte);
+  #elif defined(PG_REPLACEMENT_USE_FIFO)
+  q_push(p_buf, pte);
+  #endif
+}
   return pte;
 }
 
@@ -527,9 +528,23 @@ int madvise(uint64 base, uint64 len, int advice) {
     // Swapped out page should not appear in
     // page replacement buffer
     #ifdef PG_REPLACEMENT_USE_LRU
-    // TODO
+    for (uint64 va = begin; va <= last; va += PGSIZE) {
+      pte = walk(pgtbl, va, 0);
+      if (pte != 0){
+        int f = lru_find(p_buf, *pte);
+        if (f != -1)
+          lru_pop(p_buf, f);
+      }
+    }
     #elif defined(PG_REPLACEMENT_USE_FIFO)
-    // TODO
+    for (uint64 va = begin; va <= last; va += PGSIZE) {
+      pte = walk(pgtbl, va, 0);
+      if (pte != 0){
+        int f = q_find(p_buf, *pte);
+        if (f != -1)
+          q_pop_idx(p_buf, f);
+      }
+    }
     #endif
 
     end_op();
@@ -564,9 +579,15 @@ void pgprint() {
   printf("Page replacement buffers\n");
   printf("------Start------------\n");
   #ifdef PG_REPLACEMENT_USE_LRU
-  // TODO
+
+  for (int i = 0; i < buf.size; ++i)
+    printf("pte: %p\n", buf.bucket[i]);
+
   #elif defined(PG_REPLACEMENT_USE_FIFO)
-  // TODO
+
+  for (int i = 0; i < buf.size; ++i)
+    printf("pte: %p\n", buf.bucket[i]);
+
   #endif
   printf("------End--------------\n");
 }

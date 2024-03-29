@@ -35,4 +35,5 @@ int handle_pgfault() {
   memset(pa, 0, PGSIZE);
   if(mappages(pagetable, PGROUNDDOWN(va), PGSIZE, (uint64)pa, flags | PTE_U | PTE_R | PTE_W | PTE_X) != 0)
     kfree(pa);
+  return 0;
 }

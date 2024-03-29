@@ -22,10 +22,6 @@ riscv64-linux-gnu-gcc    -c -o kernel/kernelvec.o kernel/kernelvec.S
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/plic.o kernel/plic.c
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/virtio_disk.o kernel/virtio_disk.c
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/paging.o kernel/paging.c
-kernel/paging.c: In function ‘handle_pgfault’:
-kernel/paging.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
-   38 | }
-      | ^
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/sysvm.o kernel/sysvm.c
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/start.o kernel/start.c
 riscv64-linux-gnu-gcc -Wall  -O -fno-omit-frame-pointer -ggdb -DSOL_PGTBL -DLAB_PGTBL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/console.o kernel/console.c
@@ -41,9 +37,14 @@ riscv64-linux-gnu-objdump -S kernel/kernel > kernel/kernel.asm
 riscv64-linux-gnu-objdump -t kernel/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym
 make[1]: Leaving directory '/root'
 == Test mp2_1 (6%) ==
-mp2_1: OK (3.0s) 
+mp2_1: OK (2.8s) 
 == Test mp2_2 (12%) ==
 mp2_2: OK (0.9s) 
 == Test mp2_3 (12%) ==
-mp2_3: OK (0.9s) 
+mp2_3: OK (1.0s) 
 == Test mp2_4 (12%) ==
+mp2_4: OK (3.3s) 
+== Test mp2_5 (18%) ==
+mp2_5: OK (3.2s) 
+    (Old mp2_5.out.mp2_5 failure log removed)
+Score: 60/60
