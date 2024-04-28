@@ -1,0 +1,16 @@
+
+xv6 kernel is booting
+
+init: starting sh
+$ task4
+dispatch thread#4 at 0: allocated_time=4
+thread#4 finish at 4
+dispatch thread#1 at 4: allocated_time=1
+thread#1 finish at 5
+dispatch thread#2 at 5: allocated_time=2
+thread#2 finish at 7
+dispatch thread#3 at 7: allocated_time=3
+thread#3 finish at 10
+
+exited
+$ qemu-system-riscv64: terminating on signal 15 from pid 12189 (make)
