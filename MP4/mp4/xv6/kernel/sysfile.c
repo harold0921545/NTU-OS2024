@@ -310,8 +310,12 @@ sys_open(void)
       return -1;
     }
   } else {
-    if (omode & O_NOFOLLOW){
-      // ...
+    if ((omode & O_NOFOLLOW) > 0){
+      if((ip = namei(path)) == 0){
+          end_op();
+          return -1;
+      }
+      ilock(ip);
     }
     else{
       int dep = 0;
@@ -320,18 +324,21 @@ sys_open(void)
           end_op();
           return -1;
         }
+        // printf("ip->ref: %d(FOLLOW)\n", ip->ref);
         ilock(ip);
         if (ip->type != T_SYMLINK){
-          iunlock(ip);
-          iput(ip);
+          // printf("ip->ref: %d(symlink)\n", ip->ref);
           break;
         }
-        if (readi(ip, 0, (uint64)path, MAXPATH) == -1){
+        if (readi(ip, 0, (uint64)path, 0, MAXPATH) == -1){
+          // printf("ip->ref: %d(readi)\n", ip->ref);
           iunlock(ip);
           iput(ip);
+          end_op();
           return -1;
         }
-        iunlockput(ip);
+        iunlock(ip);
+        iput(ip);
       }
       if (dep == 20)
         return -1;
@@ -371,7 +378,6 @@ sys_open(void)
   if((omode & O_TRUNC) && ip->type == T_FILE){
     itrunc(ip);
   }
-
   iunlock(ip);
   end_op();
 
@@ -522,21 +528,20 @@ sys_symlink(void)
 
   if(argstr(0, target, MAXPATH) < 0 || argstr(1, path, MAXPATH) < 0)
     return -1;
-  
+  begin_op();
   ip = create(path, T_SYMLINK, 0, 0);
   if (ip == 0)
     return -1;
-
+  
   uint len = 0;
   while (target[len] != 0)
     ++len;
-  if (writei(ip, 0, (uint64)target, len) != len)
+  if (writei(ip, 0, (uint64)target, 0, len) != len)
     return -1;
-
   iunlock(ip); 
   iput(ip);
-  panic("You should implement symlink system call.");
-
+  // panic("You should implement symlink system call.");
+  end_op();
   return 0;
 }
 

@@ -316,6 +316,7 @@ ilock(struct inode *ip)
 void
 iunlock(struct inode *ip)
 {
+  // printf("ip->ref: %d\n", ip->ref);
   if(ip == 0 || !holdingsleep(&ip->lock) || ip->ref < 1)
     panic("iunlock");
 
