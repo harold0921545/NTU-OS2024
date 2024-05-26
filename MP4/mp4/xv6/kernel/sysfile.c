@@ -310,39 +310,11 @@ sys_open(void)
       return -1;
     }
   } else {
-    if ((omode & O_NOFOLLOW) > 0){
-      if((ip = namei(path)) == 0){
-          end_op();
-          return -1;
-      }
-      ilock(ip);
-    }
-    else{
-      int dep = 0;
-      for (dep = 0; dep < 20; ++dep){
-        if((ip = namei(path)) == 0){
-          end_op();
-          return -1;
-        }
-        // printf("ip->ref: %d(FOLLOW)\n", ip->ref);
-        ilock(ip);
-        if (ip->type != T_SYMLINK){
-          // printf("ip->ref: %d(symlink)\n", ip->ref);
-          break;
-        }
-        if (readi(ip, 0, (uint64)path, 0, MAXPATH) == -1){
-          // printf("ip->ref: %d(readi)\n", ip->ref);
-          iunlock(ip);
-          iput(ip);
-          end_op();
-          return -1;
-        }
-        iunlock(ip);
-        iput(ip);
-      }
-      if (dep == 20)
+    if((ip = namei(path)) == 0){
+        end_op();
         return -1;
     }
+    ilock(ip);
     if(ip->type == T_DIR && omode != O_RDONLY){
       iunlockput(ip);
       end_op();
@@ -362,6 +334,25 @@ sys_open(void)
     iunlockput(ip);
     end_op();
     return -1;
+  }
+
+  if ((omode & O_NOFOLLOW) == 0){
+    int dep = 0;
+    for (dep = 0; ip->type == T_SYMLINK && dep < 20; ++dep){
+      readi(ip, 0, (uint64)path, 0, MAXPATH);
+      iunlockput(ip);
+
+      if ((ip = namei(path)) == 0){
+        end_op();
+        return -1;
+      }
+      ilock(ip);
+    }
+    if (dep == 20){
+      iunlockput(ip);
+      end_op();
+      return -1;
+    }
   }
 
   if(ip->type == T_DEVICE){
@@ -536,7 +527,7 @@ sys_symlink(void)
   uint len = 0;
   while (target[len] != 0)
     ++len;
-  if (writei(ip, 0, (uint64)target, 0, len) != len)
+  if (writei(ip, 0, (uint64)target, 0, len) != len) // write
     return -1;
   iunlock(ip); 
   iput(ip);
@@ -549,25 +540,110 @@ uint64
 sys_revreadlink(void) 
 {
   // TODO: Find all symbolic links that point to 'target'
-  // char target[MAXPATH];
-  // uint64 bufaddr;
-  // int bufsize;
+  char target[MAXPATH];
+  uint64 bufaddr;
+  int bufsize;
 
-  // if(argstr(0, target, MAXPATH) < 0 || argaddr(1, &bufaddr) < 0 || argint(2, &bufsize) < 0)
-  //   return -1;
+  if(argstr(0, target, MAXPATH) < 0 || argaddr(1, &bufaddr) < 0 || argint(2, &bufsize) < 0)
+    return -1;
 
-  // char userbuf[bufsize];
-  // memset(userbuf, 0, sizeof(userbuf));
+  begin_op();
+  char userbuf[bufsize];
+  memset(userbuf, 0, sizeof(userbuf));
 
   // implement the code
+  uint buf_off = 0, ft = 0, bk = 1;
+  
+  char path[18][MAXPATH] = {0};
+  
+  path[0][0] = '/';
+  // printf("%s\n", path[0]);
+
+  while (ft < bk){
+    printf("ft: %d bk: %d\n", ft, bk);
+    struct inode *now = namei(path[ft]);
+    ilock(now);
+    uint off, inum;
+    struct dirent de;
+
+    if(now->type != T_DIR)
+      panic("rev not DIR");
+
+    for(off = 2 * sizeof(de); off < now->size; off += sizeof(de)){
+      if(readi(now, 0, (uint64)&de, off, sizeof(de)) != sizeof(de))
+        panic("rev read");
+      if(de.inum == 0)
+        continue;
+      inum = de.inum;
+      struct inode *ip = iget(now->dev, inum);
+      ilock(ip);
+      if (ip->type == T_DIR){
+        strncpy(path[bk], path[ft], MAXPATH);
+        printf("path: %s\n", path[bk]);
+        if (strlen(path[ft]) > 1){
+          path[bk][strlen(path[ft])] = '/';
+          for (int i = 0; i < strlen(de.name); ++i)
+           path[bk][strlen(path[ft]) + 1 + i] = de.name[i];
+        }
+        else{
+          for (int i = 0; i < strlen(de.name); ++i)
+           path[bk][strlen(path[ft]) + i] = de.name[i];
+        }
+        // printf("path: %s\n", path[bk]);
+        bk++;
+      }
+      else if (ip->type == T_SYMLINK){
+        int dep = 0;
+        char p[MAXPATH];
+        readi(ip, 0, (uint64)p, 0, MAXPATH);
+        struct inode *dp;
+        for (dep = 0; dep < 20; ++dep){
+          if((dp = namei(p)) == 0){
+            end_op();
+            return -1;
+          }
+          ilock(dp);
+          if (dp->type != T_SYMLINK){
+            iunlockput(dp);
+            break;
+          }
+          if (readi(dp, 0, (uint64)p, 0, MAXPATH) == -1){
+            iunlockput(dp);
+            end_op();
+            return -1;
+          }
+          iunlockput(dp);
+        }
+        
+        if (dep < 20){ // p is good
+          if (buf_off > 0)
+            userbuf[buf_off++] = ' ';
+          for (int i = 0; i < strlen(path[ft]); ++i)
+            userbuf[buf_off + i] = path[ft][i];
+          buf_off += strlen(path[ft]);
+          if (strlen(path[ft]) > 1)
+            userbuf[buf_off++] = '/';
+          for (int i = 0; i < strlen(de.name); ++i)
+            userbuf[buf_off + i] = de.name[i];
+          buf_off += strlen(de.name);
+        }
+      }
+      iunlock(ip);
+    }
+    iunlockput(now);
+    ft++;
+  }
+
+  if(copyout(myproc()->pagetable, bufaddr, userbuf, strlen(userbuf)) < 0){
+    end_op();
+    return -1;
+  }
 
   // Copy the result from kernel to user space, userbuf should store all symbolic links that point to 'target'
-  // if(copyout(myproc()->pagetable, bufaddr, userbuf, strlen(userbuf)) < 0)
-  //   return -1;
-
   // Return the number of bytes written to user buffer
-    
-  panic("sys_revreadlink is not implemented yet");
 
+  end_op();
+  return buf_off;
+  // panic("sys_revreadlink is not implemented yet");
   return -1;
 }

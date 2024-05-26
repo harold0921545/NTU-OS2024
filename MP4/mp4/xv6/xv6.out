@@ -10,4 +10,4 @@ public testcase 1:
 public testcase 1: ok
 public testcase 2:
 public testcase 2: ok
-$ qemu-system-riscv64: terminating on signal 15 from pid 21562 (make)
+$ qemu-system-riscv64: terminating on signal 15 from pid 38931 (make)
